@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="245" y="305"/>
         </scene>
-        <!--View Controller-->
+        <!--Post View Controller-->
         <scene sceneID="eMl-84-txv">
             <objects>
-                <viewController id="el7-ia-jek" sceneMemberID="viewController">
+                <viewController id="el7-ia-jek" customClass="PostViewController" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FK7-iF-pAo"/>
                         <viewControllerLayoutGuide type="bottom" id="h50-3X-Jak"/>
@@ -111,9 +111,18 @@
                                 <rect key="frame" x="244" y="487" width="108" height="30"/>
                                 <state key="normal" title="Submit"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="(Potential Post)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-Zj-9v0">
+                                <rect key="frame" x="180" y="247" width="240" height="193"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.24199357269503546" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="postText" destination="dMz-Zj-9v0" id="epV-SP-euZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWu-sI-aF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
