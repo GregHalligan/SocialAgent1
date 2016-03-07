@@ -14,7 +14,7 @@ class PostViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "showSecondVC" { // Make sure the segue has this identity in Interface Builder
+        if segue.identifier == "showGradeVC" { // Make sure the segue has this identity in Interface Builder
             
             let vc = segue.destinationViewController as! GradeViewController // Change that to the actual class name
             
