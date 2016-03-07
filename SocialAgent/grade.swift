@@ -390,7 +390,7 @@ class grade {
 
 var count = dictionary.count
 
-var string = PostViewController().postTextView.text
+var string = PostViewController().postText.text
 
 var value = 0
 var autoGrade = 0

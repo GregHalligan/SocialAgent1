@@ -10,7 +10,7 @@ import UIKit
 
 class PostViewController: UIViewController {
 
-    @IBOutlet weak var postTextView: UITextView!
+    @IBOutlet weak var postText: UITextView!
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -18,7 +18,7 @@ class PostViewController: UIViewController {
             
             let vc = segue.destinationViewController as! GradeViewController // Change that to the actual class name
             
-            vc.textFromPost = postTextView.text
+            vc.textFromPost = postText.text
         }
     }
     
