@@ -18,7 +18,7 @@ class PostViewController: UIViewController {
             
             let vc = segue.destinationViewController as! GradeViewController
             
-            vc.textFromPost = postText.text
+            vc.textFromVC1 = postText.text
         }
     }
     

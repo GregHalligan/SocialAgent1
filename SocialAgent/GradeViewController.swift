@@ -10,10 +10,15 @@ import UIKit
 
 class GradeViewController: UIViewController {
     
-    var textFromPost: String!
+    
+    @IBOutlet weak var textFromPost: UITextView!
+    
+    var textFromVC1: String!
 
     override func viewDidLoad() {
+        textFromPost.text = textFromVC1
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
