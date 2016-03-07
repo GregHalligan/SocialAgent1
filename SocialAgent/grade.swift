@@ -2,13 +2,13 @@
 //  grade.swift
 //  SocialAgent
 //
-//  Created by Corey on 3/2/16.
+//  Created by Corey on 3/7/16.
 //  Copyright © 2016 TequillaMockingbird. All rights reserved.
 //
 
+import UIKit
 import Swift
 import Foundation
-import UIKit
 
 var dictionary: [String] =
     ["2g1c",
@@ -386,81 +386,81 @@ var dictionary: [String] =
      "yiffy",
      "zoophilia"]
 
-class Grade {
-    
-    var count = dictionary.count
-    
-    let string = PostViewController().postText.text
-    
-    var value = 0
-    var autoGrade = 0
-    var humanGrade = 0
-    var weightedTotal = 0.00
-    var weightedAutoGrade = 0.00
-    var weightedHumGrade = 0.00
-    
+class grade {
+
+var count = dictionary.count
+
+var string = PostViewController().postTextView.text
+
+var value = 0
+var autoGrade = 0
+var humanGrade = 0
+var weightedTotal = 0.00
+var weightedAutoGrade = 0.00
+var weightedHumGrade = 0.00
+
     init() {
-        value = dictionary.map({
-            string.lowercaseString.componentsSeparatedByString($0).count - 1
-        }).reduce(0, combine:+)
-        
-        for index in 0 ..< count {
-            if string.lowercaseString.rangeOfString(dictionary[index]) != nil {
-                print("\(dictionary[index]) is a flagged word")
-            }
-        }
-        
-        //flagged word count
-        print(value)
-        
-        if value >= 4 {
-            autoGrade = 0
-        }
-        else if value == 3 {
-            autoGrade = 25
-        }
-        else if value == 2 {
-            autoGrade = 50
-        }
-        else if value == 1 {
-            autoGrade = 75
-        }
-        else if value == 0 {
-            autoGrade = 100
-        }
-        
-        //if (goodPost)
-        humanGrade = 100
-        //else
-        //humanGrade = 0
-        
-        //if human check selected
-        weightedAutoGrade = 0.50 * Double(autoGrade)
-        weightedHumGrade = 0.50 * Double(humanGrade)
-        weightedTotal = weightedAutoGrade + weightedHumGrade
-        
-        //elseif user doesn't want human check
-        //weightedAutoGrade = 1.00 * Double(autoGrade)
-        //weightedHumGrade = 0.00
-        //weightedTotal = weightedAutoGrade + weightedHumGrade
-        
-        print("Your post has a grade of \(weightedTotal)%")
-        
-        if weightedTotal >= 90 {
-            print("Make post")
-            //edit
-        }
-        else if weightedTotal < 90 && weightedTotal >= 70 {
-            print("yellow “Make post” button")
-            //edit
-        }
-        else if weightedTotal < 70 && weightedTotal > 50 {
-            print("red make post button")
-            //edit
-        }
-        else if weightedTotal <= 50 {
-            print("Please edit your post before continuing")
-        }
+    value = dictionary.map({
+    string.lowercaseString.componentsSeparatedByString($0).count - 1
+}).reduce(0, combine:+)
+
+for index in 0 ..< count {
+    if string.lowercaseString.rangeOfString(dictionary[index]) != nil {
+        print("\(dictionary[index]) is a flagged word")
     }
-    
+}
+
+//flagged word count
+print(value)
+
+if value >= 4 {
+    autoGrade = 0
+}
+else if value == 3 {
+    autoGrade = 25
+}
+else if value == 2 {
+    autoGrade = 50
+}
+else if value == 1 {
+    autoGrade = 75
+}
+else if value == 0 {
+    autoGrade = 100
+}
+
+//if (goodPost)
+humanGrade = 100
+//else
+//humanGrade = 0
+
+//if human check selected
+weightedAutoGrade = 0.50 * Double(autoGrade)
+weightedHumGrade = 0.50 * Double(humanGrade)
+weightedTotal = weightedAutoGrade + weightedHumGrade
+
+//elseif user doesn't want human check
+//weightedAutoGrade = 1.00 * Double(autoGrade)
+//weightedHumGrade = 0.00
+//weightedTotal = weightedAutoGrade + weightedHumGrade
+
+print("Your post has a grade of \(weightedTotal)%")
+
+if weightedTotal >= 90 {
+    print("Make post")
+    //edit
+}
+else if weightedTotal < 90 && weightedTotal >= 70 {
+    print("yellow “Make post” button")
+    //edit
+}
+else if weightedTotal < 70 && weightedTotal > 50 {
+    print("red make post button")
+    //edit
+}
+else if weightedTotal <= 50 {
+    print("Please edit your post before continuing")
+}
+    }
+
 }

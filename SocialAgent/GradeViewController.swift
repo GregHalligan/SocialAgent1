@@ -1,27 +1,17 @@
 //
-//  PostViewController.swift
+//  GradeViewController.swift
 //  SocialAgent
 //
-//  Created by MU IT Program on 3/3/16.
+//  Created by Corey on 3/7/16.
 //  Copyright © 2016 TequillaMockingbird. All rights reserved.
 //
 
 import UIKit
 
-class PostViewController: UIViewController {
+class GradeViewController: UIViewController {
+    
+    var textFromPost: String!
 
-    @IBOutlet weak var postTextView: UITextView!
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if segue.identifier == "showSecondVC" { // Make sure the segue has this identity in Interface Builder
-            
-            let vc = segue.destinationViewController as! GradeViewController // Change that to the actual class name
-            
-            vc.textFromPost = postTextView.text
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
