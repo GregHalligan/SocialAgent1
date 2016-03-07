@@ -13,10 +13,10 @@ class GradeViewController: UIViewController {
     
     @IBOutlet weak var textFromPost: UITextView!
     
-    var textFromVC1: String!
+    var copyOfPost: String!
 
     override func viewDidLoad() {
-        textFromPost.text = textFromVC1
+        textFromPost.text = copyOfPost
         super.viewDidLoad()
         
 
