@@ -2,7 +2,7 @@
 //  GradeViewController.swift
 //  SocialAgent
 //
-//  Created by Corey on 3/7/16.
+//  Created by Capstone on 3/7/16.
 //  Copyright © 2016 TequillaMockingbird. All rights reserved.
 //
 
@@ -12,14 +12,16 @@ class GradeViewController: UIViewController {
     
     
     @IBOutlet weak var textFromPost: UITextView!
+    @IBOutlet weak var total: UILabel!
     
     var copyOfPost: String!
-
+    
     override func viewDidLoad() {
         textFromPost.text = copyOfPost
+        total.text = String(weightedTotal)
         super.viewDidLoad()
         
-
+        
         // Do any additional setup after loading the view.
     }
 

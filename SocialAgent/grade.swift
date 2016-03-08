@@ -386,11 +386,9 @@ var dictionary: [String] =
      "yiffy",
      "zoophilia"]
 
-class grade {
-
 var count = dictionary.count
 
-var string = PostViewController().postText.text
+let string = "test"
 
 var value = 0
 var autoGrade = 0
@@ -398,6 +396,9 @@ var humanGrade = 0
 var weightedTotal = 0.00
 var weightedAutoGrade = 0.00
 var weightedHumGrade = 0.00
+
+class Grade {
+    
 
     init() {
     value = dictionary.map({
@@ -444,7 +445,7 @@ weightedTotal = weightedAutoGrade + weightedHumGrade
 //weightedHumGrade = 0.00
 //weightedTotal = weightedAutoGrade + weightedHumGrade
 
-print("Your post has a grade of \(weightedTotal)%")
+//print("Your post has a grade of \(weightedTotal)%")
 
 if weightedTotal >= 90 {
     print("Make post")
@@ -462,5 +463,6 @@ else if weightedTotal <= 50 {
     print("Please edit your post before continuing")
 }
     }
+    
 
 }
