@@ -18,6 +18,7 @@
 		672BA5CF1C7C1CD300E50A2A /* SocialAgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5CE1C7C1CD300E50A2A /* SocialAgentTests.swift */; };
 		672BA5DA1C7C1CD300E50A2A /* SocialAgentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5D91C7C1CD300E50A2A /* SocialAgentUITests.swift */; };
 		67CF67731C8947E2000D1ACC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF67721C8947E2000D1ACC /* PostViewController.swift */; };
+		79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EAE8961C8FB65400C914A1 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		672BA5D91C7C1CD300E50A2A /* SocialAgentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAgentUITests.swift; sourceTree = "<group>"; };
 		672BA5DB1C7C1CD300E50A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67CF67721C8947E2000D1ACC /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		79EAE8961C8FB65400C914A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 		672BA5AA1C7C1CD200E50A2A = {
 			isa = PBXGroup;
 			children = (
+				79EAE8961C8FB65400C914A1 /* Social.framework */,
 				672BA5B51C7C1CD300E50A2A /* SocialAgent */,
 				672BA5CD1C7C1CD300E50A2A /* SocialAgentTests */,
 				672BA5D81C7C1CD300E50A2A /* SocialAgentUITests */,
