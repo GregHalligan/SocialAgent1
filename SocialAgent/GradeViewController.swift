@@ -9,6 +9,7 @@
 import UIKit
 import Social
 
+
 class GradeViewController: UIViewController {
     
     
@@ -16,10 +17,13 @@ class GradeViewController: UIViewController {
     @IBOutlet weak var total: UILabel!
     
     var copyOfPost: String!
+    let score = Grade.sharedInstance
+    var newTotal : Double!
     
     override func viewDidLoad() {
         textFromPost.text = copyOfPost
-        total.text = String(weightedTotal)
+        newTotal = self.score.weightedTotal
+        total.text = String(newTotal)
         super.viewDidLoad()
         
         

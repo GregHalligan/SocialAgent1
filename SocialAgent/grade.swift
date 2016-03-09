@@ -386,18 +386,30 @@ var dictionary: [String] =
      "yiffy",
      "zoophilia"]
 
-var count = dictionary.count
 
-let string = "test"
-
-var value = 0
-var autoGrade = 0
-var humanGrade = 0
-var weightedTotal = 0.00
-var weightedAutoGrade = 0.00
-var weightedHumGrade = 0.00
 
 class Grade {
+    var count = dictionary.count
+    
+    let string = "test"
+    
+    var value = 0
+    var autoGrade = 0
+    var humanGrade = 0
+    var weightedTotal = 0.00
+    var weightedAutoGrade = 0.00
+    var weightedHumGrade = 0.00
+    
+    class var sharedInstance: Grade {
+        struct Static {
+            static var instance: Grade?
+            static var token: dispatch_once_t = 0
+        }
+        dispatch_once(&Static.token) {
+            Static.instance = Grade()
+        }
+        return Static.instance!
+    }
     
 
     init() {
@@ -439,6 +451,11 @@ humanGrade = 100
 weightedAutoGrade = 0.50 * Double(autoGrade)
 weightedHumGrade = 0.50 * Double(humanGrade)
 weightedTotal = weightedAutoGrade + weightedHumGrade
+        
+//get weighted total
+//func getWeightedTotal() -> Double{
+  //  return weightedTotal
+//}
 
 //elseif user doesn't want human check
 //weightedAutoGrade = 1.00 * Double(autoGrade)
