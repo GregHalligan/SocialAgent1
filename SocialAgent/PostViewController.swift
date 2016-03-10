@@ -9,6 +9,17 @@
 import UIKit
 
 class PostViewController: UIViewController {
+    
+    class var sharedInstance: PostViewController {
+        struct Static {
+            static var instance: PostViewController?
+            static var token: dispatch_once_t = 0
+        }
+        dispatch_once(&Static.token) {
+            Static.instance = PostViewController()
+        }
+        return Static.instance!
+    }
 
     @IBOutlet weak var postText: UITextView!
     
