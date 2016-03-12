@@ -389,9 +389,14 @@ var dictionary: [String] =
 
 
 class Grade {
+    var postData = PostViewController()
+    //let string = "PENIS PENIS PENIS"
+    //let postData = PostViewController()
+    let string = "test"
+    
     var count = dictionary.count
     
-    let string = "test"
+   
     
     var value = 0
     var autoGrade = 0

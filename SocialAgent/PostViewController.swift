@@ -10,7 +10,7 @@ import UIKit
 
 class PostViewController: UIViewController {
     
-    class var sharedInstance: PostViewController {
+    class var sharedPost: PostViewController {
         struct Static {
             static var instance: PostViewController?
             static var token: dispatch_once_t = 0
@@ -20,7 +20,8 @@ class PostViewController: UIViewController {
         }
         return Static.instance!
     }
-
+    
+    
     @IBOutlet weak var postText: UITextView!
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -32,6 +33,13 @@ class PostViewController: UIViewController {
             vc.copyOfPost = postText.text
         }
     }
+    
+    
+    //testing
+    func getPost() -> UITextView {
+        return postText
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
