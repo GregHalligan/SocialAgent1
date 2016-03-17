@@ -390,12 +390,10 @@ var dictionary: [String] =
 
 class Grade {
     var postData = PostViewController()
-    //let string = "PENIS PENIS PENIS"
-    //let postData = PostViewController()
-    let string = "test"
+    let string = PostViewController.sharedPost
+    var newString : String!
     
     var count = dictionary.count
-    
    
     
     var value = 0
@@ -418,12 +416,13 @@ class Grade {
     
 
     init() {
+    newString = self.string.postText?.text
     value = dictionary.map({
-    string.lowercaseString.componentsSeparatedByString($0).count - 1
+    newString.lowercaseString.componentsSeparatedByString($0).count - 1
 }).reduce(0, combine:+)
 
 for index in 0 ..< count {
-    if string.lowercaseString.rangeOfString(dictionary[index]) != nil {
+    if newString.lowercaseString.rangeOfString(dictionary[index]) != nil {
         print("\(dictionary[index]) is a flagged word")
     }
 }

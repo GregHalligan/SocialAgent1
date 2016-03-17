@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		044B52F31C8DFC280092ECBD /* grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B52F21C8DFC280092ECBD /* grade.swift */; };
 		044B530F1C8E94DE0092ECBD /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B530E1C8E94DE0092ECBD /* GradeViewController.swift */; };
 		672BA5B71C7C1CD300E50A2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5B61C7C1CD300E50A2A /* AppDelegate.swift */; };
 		672BA5B91C7C1CD300E50A2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5B81C7C1CD300E50A2A /* ViewController.swift */; };
@@ -17,7 +16,8 @@
 		672BA5C41C7C1CD300E50A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672BA5C21C7C1CD300E50A2A /* LaunchScreen.storyboard */; };
 		672BA5CF1C7C1CD300E50A2A /* SocialAgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5CE1C7C1CD300E50A2A /* SocialAgentTests.swift */; };
 		672BA5DA1C7C1CD300E50A2A /* SocialAgentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5D91C7C1CD300E50A2A /* SocialAgentUITests.swift */; };
-		67CF67731C8947E2000D1ACC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF67721C8947E2000D1ACC /* PostViewController.swift */; };
+		79961A251C9A627700C8A9D2 /* grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B52F21C8DFC280092ECBD /* grade.swift */; };
+		79961A261C9A627A00C8A9D2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF67721C8947E2000D1ACC /* PostViewController.swift */; };
 		79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EAE8961C8FB65400C914A1 /* Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -273,12 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67CF67731C8947E2000D1ACC /* PostViewController.swift in Sources */,
+				79961A261C9A627A00C8A9D2 /* PostViewController.swift in Sources */,
 				672BA5B91C7C1CD300E50A2A /* ViewController.swift in Sources */,
 				672BA5B71C7C1CD300E50A2A /* AppDelegate.swift in Sources */,
+				79961A251C9A627700C8A9D2 /* grade.swift in Sources */,
 				672BA5BF1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld in Sources */,
 				044B530F1C8E94DE0092ECBD /* GradeViewController.swift in Sources */,
-				044B52F31C8DFC280092ECBD /* grade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
