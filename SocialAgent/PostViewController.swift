@@ -9,7 +9,19 @@
 import UIKit
 
 class PostViewController: UIViewController {
-
+    
+    class var sharedPost: PostViewController {
+        struct Static {
+            static var instance: PostViewController?
+            static var token: dispatch_once_t = 0
+        }
+        dispatch_once(&Static.token) {
+            Static.instance = PostViewController()
+        }
+        return Static.instance!
+    }
+    
+    
     @IBOutlet weak var postText: UITextView!
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -22,6 +34,13 @@ class PostViewController: UIViewController {
         }
     }
     
+    
+    //testing
+    func getPost() -> UITextView {
+        return postText
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,8 +51,8 @@ class PostViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
+    
     /*
     // MARK: - Navigation
 

@@ -386,27 +386,44 @@ var dictionary: [String] =
      "yiffy",
      "zoophilia"]
 
-var count = dictionary.count
 
-let string = "test"
-
-var value = 0
-var autoGrade = 0
-var humanGrade = 0
-var weightedTotal = 0.00
-var weightedAutoGrade = 0.00
-var weightedHumGrade = 0.00
 
 class Grade {
+    var postData = PostViewController()
+    //test
+    let string = PostViewController.sharedPost
+    var newString : String!
+    
+    var count = dictionary.count
+   
+    
+    var value = 0
+    var autoGrade = 0
+    var humanGrade = 0
+    var weightedTotal = 0.00
+    var weightedAutoGrade = 0.00
+    var weightedHumGrade = 0.00
+    
+    class var sharedInstance: Grade {
+        struct Static {
+            static var instance: Grade?
+            static var token: dispatch_once_t = 0
+        }
+        dispatch_once(&Static.token) {
+            Static.instance = Grade()
+        }
+        return Static.instance!
+    }
     
 
     init() {
+    newString = self.string.postText?.text
     value = dictionary.map({
-    string.lowercaseString.componentsSeparatedByString($0).count - 1
+    newString.lowercaseString.componentsSeparatedByString($0).count - 1
 }).reduce(0, combine:+)
 
 for index in 0 ..< count {
-    if string.lowercaseString.rangeOfString(dictionary[index]) != nil {
+    if newString.lowercaseString.rangeOfString(dictionary[index]) != nil {
         print("\(dictionary[index]) is a flagged word")
     }
 }
@@ -439,6 +456,11 @@ humanGrade = 100
 weightedAutoGrade = 0.50 * Double(autoGrade)
 weightedHumGrade = 0.50 * Double(humanGrade)
 weightedTotal = weightedAutoGrade + weightedHumGrade
+        
+//get weighted total
+//func getWeightedTotal() -> Double{
+  //  return weightedTotal
+//}
 
 //elseif user doesn't want human check
 //weightedAutoGrade = 1.00 * Double(autoGrade)
