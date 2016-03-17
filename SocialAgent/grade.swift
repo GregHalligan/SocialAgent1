@@ -390,6 +390,7 @@ var dictionary: [String] =
 
 class Grade {
     var postData = PostViewController()
+    //test
     let string = PostViewController.sharedPost
     var newString : String!
     
