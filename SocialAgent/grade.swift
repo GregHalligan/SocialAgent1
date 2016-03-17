@@ -390,7 +390,6 @@ var dictionary: [String] =
 
 class Grade {
     var postData = PostViewController()
-    //test
     let string = PostViewController.sharedPost
     var newString : String!
     
@@ -417,7 +416,7 @@ class Grade {
     
 
     init() {
-    newString = self.string.postText?.text
+    newString = self.string.postText.text
     value = dictionary.map({
     newString.lowercaseString.componentsSeparatedByString($0).count - 1
 }).reduce(0, combine:+)
