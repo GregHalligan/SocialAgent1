@@ -10,17 +10,6 @@ import UIKit
 
 class PostViewController: UIViewController {
     
-    class var sharedPost: PostViewController {
-        struct Static {
-            static var instance: PostViewController?
-            static var token: dispatch_once_t = 0
-        }
-        dispatch_once(&Static.token) {
-            Static.instance = PostViewController()
-        }
-        return Static.instance!
-    }
-    
     
     @IBOutlet weak var postText: UITextView!
     
@@ -31,8 +20,11 @@ class PostViewController: UIViewController {
             let vc = segue.destinationViewController as! GradeViewController
             
             vc.copyOfPost = postText.text
+            
         }
     }
+    
+    static var sharedPost: PostViewController?
     
     
     //testing
@@ -42,7 +34,9 @@ class PostViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        PostViewController.sharedPost = self
 
         // Do any additional setup after loading the view.
     }

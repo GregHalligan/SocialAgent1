@@ -416,9 +416,9 @@ class Grade {
     
 
     init() {
-    newString = self.string.postText.text
+    newString = self.string?.postText.text
     value = dictionary.map({
-    newString.lowercaseString.componentsSeparatedByString($0).count - 1
+    (newString?.lowercaseString.componentsSeparatedByString($0).count)! - 1
 }).reduce(0, combine:+)
 
 for index in 0 ..< count {
