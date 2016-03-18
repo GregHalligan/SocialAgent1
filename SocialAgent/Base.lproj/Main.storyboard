@@ -67,6 +67,12 @@
                                     <segue destination="el7-ia-jek" kind="presentation" identifier="showPostVC" id="Laz-k0-Ytt"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fb-art.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aro-cC-GvZ">
+                                <rect key="frame" x="156" y="456" width="80" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alltwitter-twitter-bird-logo-white-on-blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="0jH-UM-YqY">
+                                <rect key="frame" x="339" y="456" width="80" height="76"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -410,6 +416,10 @@
             <point key="canvasLocation" x="965" y="305"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alltwitter-twitter-bird-logo-white-on-blue.png" width="600" height="395"/>
+        <image name="fb-art.jpg" width="200" height="200"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Laz-k0-Ytt"/>
     </inferredMetricsTieBreakers>
