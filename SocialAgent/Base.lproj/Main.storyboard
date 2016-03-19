@@ -6,6 +6,61 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="khl-he-5Rr">
+            <objects>
+                <viewController id="HDd-Nf-ugA" customClass="MenuViewController" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nEU-fd-O6J"/>
+                        <viewControllerLayoutGuide type="bottom" id="A3j-ZM-iog"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="661-Ww-WB7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vL-Ba-d5t">
+                                <rect key="frame" x="90" y="352" width="143" height="30"/>
+                                <state key="normal" title="Enter Reviewer Code"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxc-bW-LJH">
+                                <rect key="frame" x="284" y="542" width="32" height="30"/>
+                                <state key="normal" title="Hide"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U2-76-2eK">
+                                <rect key="frame" x="366" y="177" width="135" height="30"/>
+                                <state key="normal" title="View Pending Posts"/>
+                                <connections>
+                                    <segue destination="RAJ-JC-h6q" kind="presentation" id="hgc-g8-47z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og3-Pp-zTm">
+                                <rect key="frame" x="382" y="352" width="103" height="30"/>
+                                <state key="normal" title="Find Reviewers"/>
+                                <connections>
+                                    <segue destination="VFS-uP-yMf" kind="presentation" id="e0b-jO-3Fs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-dN-pqW">
+                                <rect key="frame" x="125" y="177" width="72" height="30"/>
+                                <state key="normal" title="Make Post"/>
+                                <connections>
+                                    <segue destination="tKq-oi-iYV" kind="presentation" id="pbk-2V-ZVx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="enterCode" destination="4vL-Ba-d5t" id="gfj-ji-y0O"/>
+                        <outlet property="findReviewer" destination="Og3-Pp-zTm" id="WXF-uS-Tgs"/>
+                        <outlet property="makePost" destination="bm5-dN-pqW" id="vHw-d7-M5m"/>
+                        <outlet property="pendingPosts" destination="3U2-76-2eK" id="TuU-6A-50W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCO-3m-svs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="297"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="xzs-sy-nU0">
             <objects>
@@ -20,7 +75,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTe-hh-AYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-495" y="305"/>
+            <point key="canvasLocation" x="-1177" y="297"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -34,79 +89,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Or enter account credentals using" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neh-Ga-OBx">
-                                <rect key="frame" x="164" y="315" width="260" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fb-art.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aro-cC-GvZ">
+                                <rect key="frame" x="167" y="277" width="80" height="74"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Social Agent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDr-iW-wOr">
                                 <rect key="frame" x="167" y="64" width="255" height="76"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q2-XR-zaZ">
-                                <rect key="frame" x="149" y="421" width="95" height="32"/>
-                                <state key="normal" title="Facebook">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4k-2j-22z">
-                                <rect key="frame" x="332" y="421" width="95" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Twitter">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log in with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neh-Ga-OBx">
+                                <rect key="frame" x="250" y="218" width="101" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4R-bI-8q6">
-                                <rect key="frame" x="234" y="209" width="121" height="51"/>
+                                <rect key="frame" x="234" y="479" width="121" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Log In"/>
+                                <state key="normal" title="Menu"/>
                                 <connections>
-                                    <segue destination="el7-ia-jek" kind="presentation" identifier="showPostVC" id="Laz-k0-Ytt"/>
+                                    <segue destination="HDd-Nf-ugA" kind="presentation" id="kJw-ZU-44U"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fb-art.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aro-cC-GvZ">
-                                <rect key="frame" x="156" y="456" width="80" height="74"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alltwitter-twitter-bird-logo-white-on-blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="0jH-UM-YqY">
-                                <rect key="frame" x="339" y="456" width="80" height="76"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alltwitter-twitter-bird-logo-white-on-blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="0jH-UM-YqY">
+                                <rect key="frame" x="342" y="275" width="80" height="76"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Q2-XR-zaZ" secondAttribute="trailing" constant="389" id="07L-pK-jaR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H4k-2j-22z" secondAttribute="bottom" constant="129" id="7Zo-qB-tJJ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Q2-XR-zaZ" secondAttribute="bottom" constant="146" id="9NQ-RR-XmB"/>
                             <constraint firstItem="i4R-bI-8q6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="B3I-zx-NwZ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Q2-XR-zaZ" secondAttribute="bottom" constant="146" id="HyT-Y1-UhM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H4k-2j-22z" secondAttribute="bottom" constant="129" id="LZT-DA-fNt"/>
                             <constraint firstItem="RDr-iW-wOr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5.5" id="Ooq-MF-zOp"/>
-                            <constraint firstItem="Neh-Ga-OBx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UQT-WR-dlk"/>
-                            <constraint firstItem="2Q2-XR-zaZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="cFi-qy-qjf"/>
                             <constraint firstItem="i4R-bI-8q6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fd2-46-ebx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="H4k-2j-22z" secondAttribute="trailing" constant="89" id="l4f-Uh-NrI"/>
                             <constraint firstItem="RDr-iW-wOr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="q2Q-lg-iMw"/>
-                            <constraint firstItem="H4k-2j-22z" firstAttribute="trailing" secondItem="2Q2-XR-zaZ" secondAttribute="trailing" id="qrp-ea-9DH"/>
-                            <constraint firstItem="Neh-Ga-OBx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u8B-JQ-eVE"/>
-                            <constraint firstItem="2Q2-XR-zaZ" firstAttribute="top" secondItem="Neh-Ga-OBx" secondAttribute="bottom" constant="57" id="vur-QU-Ghn"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="07L-pK-jaR"/>
-                                <exclude reference="vur-QU-Ghn"/>
-                                <exclude reference="qrp-ea-9DH"/>
-                                <exclude reference="7Zo-qB-tJJ"/>
-                                <exclude reference="HyT-Y1-UhM"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="K7p-Df-Nzi"/>
+                    <connections>
+                        <outlet property="facebookButton" destination="aro-cC-GvZ" id="eNM-Jy-k2U"/>
+                        <outlet property="twitterButton" destination="0jH-UM-YqY" id="x7f-At-hz7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="305"/>
+            <point key="canvasLocation" x="-513" y="297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9ge-Xb-dOG">
+            <objects>
+                <navigationController id="tKq-oi-iYV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GsT-WQ-Bgx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="el7-ia-jek" kind="relationship" relationship="rootViewController" id="tJB-YY-J8v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSg-kK-6x2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-541" y="1093"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="eMl-84-txv">
@@ -137,7 +179,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="hHI-VK-QQ3" kind="presentation" identifier="showGradeVC" id="Ac8-cN-awU"/>
+                                    <segue destination="j08-To-jfX" kind="presentation" id="hHk-eC-FwV"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-Zj-9v0">
@@ -177,6 +219,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="5kq-rb-pJc"/>
                     <connections>
                         <outlet property="postText" destination="dMz-Zj-9v0" id="epV-SP-euZ"/>
                     </connections>
@@ -184,6 +227,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWu-sI-aF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="1062"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gNq-Kb-r6C">
+            <objects>
+                <navigationController id="j08-To-jfX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HcW-oj-0Ts">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hHI-VK-QQ3" kind="relationship" relationship="rootViewController" id="2Zl-ag-kTT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gm-2N-CXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="1893"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Xv-dy-d2F">
+            <objects>
+                <navigationController id="RAJ-JC-h6q" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XEH-ai-Rcb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="shk-Hy-aWV" kind="relationship" relationship="rootViewController" id="Fys-ob-fdh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvj-HV-3Nm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="1062"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GAs-Au-0nD">
@@ -226,10 +301,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2Z9-OF-v15"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WP8-bB-3BJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="1068"/>
+            <point key="canvasLocation" x="1581" y="1062"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gVR-Lb-IUN">
@@ -280,7 +356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0H-5d-ynW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="1900"/>
+            <point key="canvasLocation" x="-541" y="1886"/>
         </scene>
         <!--Grade View Controller-->
         <scene sceneID="qW5-yt-ypi">
@@ -318,29 +394,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wu-dO-kCO">
-                                <rect key="frame" x="153" y="460" width="145" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Post to Facebook"/>
-                                <connections>
-                                    <action selector="facebookButtonPushed:" destination="hHI-VK-QQ3" eventType="touchDragInside" id="1FU-et-ydH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="we0-dN-EAl">
                                 <rect key="frame" x="204" y="313" width="42" height="21"/>
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-Qo-aT2">
-                                <rect key="frame" x="230" y="414" width="141" height="28"/>
+                                <rect key="frame" x="261" y="418" width="78" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Wait for Reviews"/>
+                                <state key="normal" title="Home"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wu-dO-kCO">
+                                <rect key="frame" x="129" y="460" width="145" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Post to Facebook"/>
                                 <connections>
-                                    <segue destination="el7-ia-jek" kind="presentation" id="EGY-pf-qMG"/>
+                                    <action selector="facebookButtonPushed:" destination="hHI-VK-QQ3" eventType="touchDragInside" id="1FU-et-ydH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2j-1e-a8c">
-                                <rect key="frame" x="349" y="465" width="123" height="30"/>
+                                <rect key="frame" x="331" y="465" width="123" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Post to Twitter"/>
                                 <connections>
@@ -350,6 +423,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ihd-eu-Aan"/>
                     <connections>
                         <outlet property="textFromPost" destination="WTX-1q-wCA" id="SBg-eV-nYW"/>
                         <outlet property="total" destination="we0-dN-EAl" id="uGS-WV-Kjp"/>
@@ -358,6 +432,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1H-5h-gFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="919" y="1900"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hOh-eH-w9G">
+            <objects>
+                <navigationController id="VFS-uP-yMf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0CU-Si-uYq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rzl-1F-j4C" kind="relationship" relationship="rootViewController" id="2FO-sN-Tgh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1d-CU-lxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="297"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ywN-sa-wL2">
@@ -410,17 +500,15 @@
                             <constraint firstItem="eJb-7F-Dsb" firstAttribute="top" secondItem="vXo-kc-Czb" secondAttribute="bottom" constant="19" id="usM-3h-9Tl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="eVN-nk-slN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLm-UC-Qs3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="305"/>
+            <point key="canvasLocation" x="1575" y="297"/>
         </scene>
     </scenes>
     <resources>
         <image name="alltwitter-twitter-bird-logo-white-on-blue.png" width="600" height="395"/>
         <image name="fb-art.jpg" width="200" height="200"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Laz-k0-Ytt"/>
-    </inferredMetricsTieBreakers>
 </document>
