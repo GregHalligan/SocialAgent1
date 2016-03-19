@@ -129,6 +129,8 @@
 				044B530E1C8E94DE0092ECBD /* GradeViewController.swift */,
 				79E0AA4D1C9D116200B7625D /* MenuViewController.swift */,
 				79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */,
+				79E2D5F31C9CADCB0022A495 /* alltwitter-twitter-bird-logo-white-on-blue.png */,
+				79E2D5F11C9CADC20022A495 /* fb-art.jpg */,
 				79DA56C81C9CBB6A000ED436 /* Supporting Files */,
 			);
 			path = SocialAgent;
@@ -155,8 +157,6 @@
 		79DA56C81C9CBB6A000ED436 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79E2D5F31C9CADCB0022A495 /* alltwitter-twitter-bird-logo-white-on-blue.png */,
-				79E2D5F11C9CADC20022A495 /* fb-art.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
