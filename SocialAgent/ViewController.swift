@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
 
     @IBOutlet weak var facebookButton: UIImageView!
     @IBOutlet weak var twitterButton: UIImageView!

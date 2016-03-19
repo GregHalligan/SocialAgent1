@@ -19,52 +19,80 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vL-Ba-d5t">
-                                <rect key="frame" x="90" y="352" width="143" height="30"/>
-                                <state key="normal" title="Enter Reviewer Code"/>
+                                <rect key="frame" x="101" y="285" width="103" height="30"/>
+                                <state key="normal" title="Reviewer Code">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxc-bW-LJH">
                                 <rect key="frame" x="284" y="542" width="32" height="30"/>
-                                <state key="normal" title="Hide"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U2-76-2eK">
-                                <rect key="frame" x="366" y="177" width="135" height="30"/>
-                                <state key="normal" title="View Pending Posts"/>
+                                <state key="normal" title="Hide">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <segue destination="RAJ-JC-h6q" kind="presentation" id="hgc-g8-47z"/>
+                                    <segue destination="QxP-Jg-B7Q" kind="unwind" unwindAction="unwindToViewController:" id="c7a-fN-kku"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og3-Pp-zTm">
-                                <rect key="frame" x="382" y="352" width="103" height="30"/>
-                                <state key="normal" title="Find Reviewers"/>
+                                <rect key="frame" x="385" y="285" width="103" height="30"/>
+                                <state key="normal" title="Find Reviewers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="VFS-uP-yMf" kind="presentation" id="e0b-jO-3Fs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-dN-pqW">
-                                <rect key="frame" x="125" y="177" width="72" height="30"/>
-                                <state key="normal" title="Make Post"/>
+                                <rect key="frame" x="116" y="141" width="72" height="30"/>
+                                <state key="normal" title="Make Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="tKq-oi-iYV" kind="presentation" id="pbk-2V-ZVx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed8-Yn-mLx">
+                                <rect key="frame" x="409" y="411" width="55" height="30"/>
+                                <state key="normal" title="Button6">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U2-76-2eK">
+                                <rect key="frame" x="387" y="141" width="98" height="30"/>
+                                <state key="normal" title="Pending Posts">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RAJ-JC-h6q" kind="presentation" id="hgc-g8-47z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="185-Sr-w7k">
+                                <rect key="frame" x="125" y="411" width="55" height="30"/>
+                                <state key="normal" title="Button5">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="enterCode" destination="4vL-Ba-d5t" id="gfj-ji-y0O"/>
-                        <outlet property="findReviewer" destination="Og3-Pp-zTm" id="WXF-uS-Tgs"/>
-                        <outlet property="makePost" destination="bm5-dN-pqW" id="vHw-d7-M5m"/>
-                        <outlet property="pendingPosts" destination="3U2-76-2eK" id="TuU-6A-50W"/>
+                        <outlet property="contactButton" destination="ed8-Yn-mLx" id="Qcw-am-V36"/>
+                        <outlet property="findRev" destination="Og3-Pp-zTm" id="FR0-0T-CMr"/>
+                        <outlet property="makePost" destination="bm5-dN-pqW" id="NJa-WI-lPw"/>
+                        <outlet property="newsButton" destination="185-Sr-w7k" id="aPO-ag-Mt7"/>
+                        <outlet property="pendingPost" destination="3U2-76-2eK" id="0Oj-4N-ey2"/>
+                        <outlet property="revCode" destination="4vL-Ba-d5t" id="CyC-b7-Z0W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCO-3m-svs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QxP-Jg-B7Q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="209" y="297"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xzs-sy-nU0">
             <objects>
-                <navigationController id="6Ch-hb-FvR" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="6Ch-hb-FvR" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M1b-mj-EDs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -116,7 +144,7 @@
                                 <rect key="frame" x="342" y="275" width="80" height="76"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="i4R-bI-8q6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="B3I-zx-NwZ"/>
                             <constraint firstItem="RDr-iW-wOr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5.5" id="Ooq-MF-zOp"/>
@@ -182,20 +210,20 @@
                                     <segue destination="j08-To-jfX" kind="presentation" id="hHk-eC-FwV"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-Zj-9v0">
-                                <rect key="frame" x="96" y="247" width="409" height="231"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Potential Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CM-HA-17M">
                                 <rect key="frame" x="222" y="173" width="156" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-Zj-9v0">
+                                <rect key="frame" x="96" y="247" width="409" height="231"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="h50-3X-Jak" firstAttribute="top" secondItem="z46-Ne-Azf" secondAttribute="bottom" constant="551" id="0vj-C0-5Jo"/>
                             <constraint firstItem="z46-Ne-Azf" firstAttribute="top" secondItem="FK7-iF-pAo" secondAttribute="bottom" constant="8" id="69N-tg-HrN"/>
@@ -319,13 +347,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Social Agent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSo-TY-idI">
-                                <rect key="frame" x="245" y="28" width="101" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Post From (Insert Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfD-99-EB5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Post From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfD-99-EB5">
                                 <rect key="frame" x="177" y="95" width="236" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -345,20 +367,20 @@
                                 <rect key="frame" x="332" y="317" width="46" height="30"/>
                                 <state key="normal" title="Bad"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Insert a comment here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jk9-da-TGP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jk9-da-TGP">
                                 <rect key="frame" x="174" y="409" width="253" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0H-5d-ynW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-541" y="1886"/>
         </scene>
-        <!--Grade View Controller-->
+        <!--Grade-->
         <scene sceneID="qW5-yt-ypi">
             <objects>
                 <viewController id="hHI-VK-QQ3" customClass="GradeViewController" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
@@ -370,42 +392,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Social Agent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="be5-b7-irn">
-                                <rect key="frame" x="245" y="40" width="110" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WTX-1q-wCA">
-                                <rect key="frame" x="129" y="82" width="343" height="173"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your post was given a grade of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wd6-z0-I7R">
-                                <rect key="frame" x="183" y="271" width="235" height="29"/>
+                                <rect key="frame" x="189" y="338" width="235" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="with 0 comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZF-fY-nuS">
-                                <rect key="frame" x="267" y="313" width="281" height="21"/>
+                                <rect key="frame" x="273" y="375" width="281" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="we0-dN-EAl">
-                                <rect key="frame" x="204" y="313" width="42" height="21"/>
+                                <rect key="frame" x="215" y="375" width="42" height="21"/>
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-Qo-aT2">
-                                <rect key="frame" x="261" y="418" width="78" height="28"/>
+                                <rect key="frame" x="261" y="441" width="78" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Home"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wu-dO-kCO">
-                                <rect key="frame" x="129" y="460" width="145" height="39"/>
+                                <rect key="frame" x="129" y="505" width="145" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Post to Facebook"/>
                                 <connections>
@@ -413,17 +423,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2j-1e-a8c">
-                                <rect key="frame" x="331" y="465" width="123" height="30"/>
+                                <rect key="frame" x="332" y="510" width="123" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Post to Twitter"/>
                                 <connections>
                                     <action selector="twitterButtonPushed:" destination="hHI-VK-QQ3" eventType="touchDragInside" id="lRN-Wr-h4o"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WTX-1q-wCA">
+                                <rect key="frame" x="119" y="147" width="343" height="173"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ihd-eu-Aan"/>
+                    <navigationItem key="navigationItem" title="Grade" id="Ihd-eu-Aan"/>
                     <connections>
                         <outlet property="textFromPost" destination="WTX-1q-wCA" id="SBg-eV-nYW"/>
                         <outlet property="total" destination="we0-dN-EAl" id="uGS-WV-Kjp"/>

@@ -13,12 +13,11 @@ class MenuViewController: UIViewController {
     let transitionManager = MenuTransitionManager()
 
     @IBOutlet weak var makePost: UIButton!
-    
-    @IBOutlet weak var enterCode: UIButton!
-    
-    @IBOutlet weak var pendingPosts: UIButton!
-    
-    @IBOutlet weak var findReviewer: UIButton!
+    @IBOutlet weak var pendingPost: UIButton!
+    @IBOutlet weak var revCode: UIButton!
+    @IBOutlet weak var findRev: UIButton!
+    @IBOutlet weak var newsButton: UIButton!
+    @IBOutlet weak var contactButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

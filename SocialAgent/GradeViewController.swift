@@ -17,6 +17,7 @@ class GradeViewController: UIViewController {
     @IBOutlet weak var total: UILabel!
     
     var copyOfPost: String!
+    
     let score = Grade.sharedInstance
     var newTotal : Double!
     

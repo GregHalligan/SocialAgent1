@@ -75,25 +75,25 @@ class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UI
         // setup paramaters for 2D transitions for animations
         let topRowOffset  :CGFloat = 300
         let middleRowOffset :CGFloat = 150
-        //let bottomRowOffset  :CGFloat = 50
+        let bottomRowOffset  :CGFloat = 50
         
         //menuViewController.aboutIcon.transform = self.offStage(-topRowOffset)
         menuViewController.makePost.transform = self.offStage(-topRowOffset)
         
         //menuViewController.eventsIcon.transform = self.offStage(-middleRowOffset)
-        menuViewController.enterCode.transform = self.offStage(-middleRowOffset)
+        menuViewController.revCode.transform = self.offStage(-middleRowOffset)
         
         //menuViewController.newsIcon.transform = self.offStage(-bottomRowOffset)
-        //menuViewController.pendingPosts.transform = self.offStage(-bottomRowOffset)
+        menuViewController.newsButton.transform = self.offStage(-bottomRowOffset)
         
         //menuViewController.rosterIcon.transform = self.offStage(topRowOffset)
-        menuViewController.pendingPosts.transform = self.offStage(topRowOffset)
+        menuViewController.pendingPost.transform = self.offStage(topRowOffset)
         
         //menuViewController.ordersIcon.transform = self.offStage(middleRowOffset)
-        menuViewController.findReviewer.transform = self.offStage(middleRowOffset)
+        menuViewController.findRev.transform = self.offStage(middleRowOffset)
         
         //menuViewController.contactIcon.transform = self.offStage(bottomRowOffset)
-        //menuViewController.contactButton.transform = self.offStage(bottomRowOffset)
+        menuViewController.contactButton.transform = self.offStage(bottomRowOffset)
         
         
         
@@ -108,19 +108,19 @@ class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UI
         menuViewController.makePost.transform = CGAffineTransformIdentity
         
         //menuViewController.rosterIcon.transform = CGAffineTransformIdentity
-        menuViewController.enterCode.transform = CGAffineTransformIdentity
+        menuViewController.pendingPost.transform = CGAffineTransformIdentity
         
         //menuViewController.eventsIcon.transform = CGAffineTransformIdentity
-        menuViewController.pendingPosts.transform = CGAffineTransformIdentity
+        menuViewController.revCode.transform = CGAffineTransformIdentity
         
         //menuViewController.ordersIcon.transform = CGAffineTransformIdentity
-        menuViewController.findReviewer.transform = CGAffineTransformIdentity
+        menuViewController.findRev.transform = CGAffineTransformIdentity
         
         //menuViewController.newsIcon.transform = CGAffineTransformIdentity
-        //menuViewController.newsButton.transform = CGAffineTransformIdentity
+        menuViewController.newsButton.transform = CGAffineTransformIdentity
         
         //menuViewController.contactIcon.transform = CGAffineTransformIdentity
-        //menuViewController.contactButton.transform = CGAffineTransformIdentity
+        menuViewController.contactButton.transform = CGAffineTransformIdentity
         
     }
     
