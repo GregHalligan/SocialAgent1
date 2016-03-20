@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6Ch-hb-FvR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6Ch-hb-FvR">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vL-Ba-d5t">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vL-Ba-d5t">
                                 <rect key="frame" x="30" y="285" width="103" height="30"/>
                                 <state key="normal" title="Reviewer Code">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,41 +34,41 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og3-Pp-zTm">
-                                <rect key="frame" x="385" y="285" width="103" height="30"/>
+                                <rect key="frame" x="323" y="285" width="103" height="30"/>
                                 <state key="normal" title="Find Reviewers">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VFS-uP-yMf" kind="presentation" id="e0b-jO-3Fs"/>
+                                    <segue destination="rzl-1F-j4C" kind="push" id="FkU-q8-wN7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-dN-pqW">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-dN-pqW">
                                 <rect key="frame" x="30" y="141" width="72" height="30"/>
                                 <state key="normal" title="Make Post">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tKq-oi-iYV" kind="presentation" id="pbk-2V-ZVx"/>
+                                    <segue destination="el7-ia-jek" kind="push" id="tJK-3Y-vVP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed8-Yn-mLx">
-                                <rect key="frame" x="409" y="411" width="55" height="30"/>
-                                <state key="normal" title="Button6">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U2-76-2eK">
-                                <rect key="frame" x="387" y="141" width="98" height="30"/>
+                                <rect key="frame" x="325" y="141" width="98" height="30"/>
                                 <state key="normal" title="Pending Posts">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RAJ-JC-h6q" kind="presentation" id="hgc-g8-47z"/>
+                                    <segue destination="shk-Hy-aWV" kind="push" id="Czf-VM-OLP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="185-Sr-w7k">
-                                <rect key="frame" x="71" y="411" width="110" height="30"/>
+                                <rect key="frame" x="20" y="411" width="110" height="30"/>
                                 <state key="normal" title="Button!!!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed8-Yn-mLx">
+                                <rect key="frame" x="346" y="411" width="58" height="32"/>
+                                <state key="normal" title="Button6">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -91,6 +91,7 @@
                             <constraint firstItem="pxc-bW-LJH" firstAttribute="centerX" secondItem="661-Ww-WB7" secondAttribute="centerX" id="xWF-nt-qOb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cce-iG-acS"/>
                     <connections>
                         <outlet property="contactButton" destination="ed8-Yn-mLx" id="Qcw-am-V36"/>
                         <outlet property="findRev" destination="Og3-Pp-zTm" id="FR0-0T-CMr"/>
@@ -103,7 +104,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCO-3m-svs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="QxP-Jg-B7Q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="209" y="297"/>
+            <point key="canvasLocation" x="223" y="297"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xzs-sy-nU0">
@@ -146,20 +147,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4R-bI-8q6">
-                                <rect key="frame" x="234" y="479" width="121" height="51"/>
+                                <rect key="frame" x="231" y="459" width="121" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Menu"/>
                                 <connections>
-                                    <segue destination="HDd-Nf-ugA" kind="presentation" id="kJw-ZU-44U"/>
+                                    <segue destination="HDd-Nf-ugA" kind="presentation" id="wnh-we-zFn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-Jy-RzK">
-                                <rect key="frame" x="154" y="285" width="83" height="30"/>
-                                <state key="normal" title="Facebook"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyb-gj-SJc">
-                                <rect key="frame" x="354" y="285" width="68" height="30"/>
+                                <rect key="frame" x="417" y="285" width="68" height="30"/>
                                 <state key="normal" title="Twitter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-Jy-RzK">
+                                <rect key="frame" x="147" y="285" width="83" height="30"/>
+                                <state key="normal" title="Facebook"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -227,7 +228,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="j08-To-jfX" kind="presentation" id="hHk-eC-FwV"/>
+                                    <segue destination="hHI-VK-QQ3" kind="push" identifier="showGradeVC" id="3mw-2u-GlX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Potential Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CM-HA-17M">
@@ -425,7 +426,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="we0-dN-EAl">
-                                <rect key="frame" x="215" y="375" width="42" height="21"/>
+                                <rect key="frame" x="199" y="375" width="58" height="21"/>
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -483,7 +484,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1d-CU-lxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="297"/>
+            <point key="canvasLocation" x="1726" y="297"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ywN-sa-wL2">
@@ -540,7 +541,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLm-UC-Qs3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1575" y="297"/>
+            <point key="canvasLocation" x="2387" y="297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n6c-vh-LpI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qOa-Kr-T5G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ou0-Ga-BE0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HDd-Nf-ugA" kind="relationship" relationship="rootViewController" id="ER8-ly-34q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5M0-fl-Gbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="-427"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Czf-VM-OLP"/>
+        <segue reference="wnh-we-zFn"/>
+        <segue reference="tJK-3Y-vVP"/>
+        <segue reference="FkU-q8-wN7"/>
+        <segue reference="3mw-2u-GlX"/>
+    </inferredMetricsTieBreakers>
 </document>

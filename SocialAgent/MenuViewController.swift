@@ -10,6 +10,11 @@ import UIKit
 
 class MenuViewController: UIViewController {
     
+    @IBAction func unwindToMenuViewController (sender: UIStoryboardSegue){
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
     let transitionManager = MenuTransitionManager()
 
     @IBOutlet weak var makePost: UIButton!
