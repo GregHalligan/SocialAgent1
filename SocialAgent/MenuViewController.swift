@@ -17,12 +17,18 @@ class MenuViewController: UIViewController {
     
     let transitionManager = MenuTransitionManager()
 
+    @IBOutlet weak var twitIcon: UIImageView!
+    @IBOutlet weak var fbIcon: UIImageView!
+    @IBOutlet weak var revIcon: UIImageView!
+    @IBOutlet weak var codeIcon: UIImageView!
+    @IBOutlet weak var pendingIcon: UIImageView!
+    @IBOutlet weak var postIcon: UIImageView!
     @IBOutlet weak var makePost: UIButton!
     @IBOutlet weak var pendingPost: UIButton!
     @IBOutlet weak var revCode: UIButton!
     @IBOutlet weak var findRev: UIButton!
-    @IBOutlet weak var newsButton: UIButton!
-    @IBOutlet weak var contactButton: UIButton!
+    @IBOutlet weak var fbButton: UIButton!
+    @IBOutlet weak var twitButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

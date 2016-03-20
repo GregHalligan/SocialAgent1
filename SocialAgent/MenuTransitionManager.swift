@@ -77,23 +77,23 @@ class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UI
         let middleRowOffset :CGFloat = 150
         let bottomRowOffset  :CGFloat = 50
         
-        //menuViewController.aboutIcon.transform = self.offStage(-topRowOffset)
+        menuViewController.postIcon.transform = self.offStage(-topRowOffset)
         menuViewController.makePost.transform = self.offStage(-topRowOffset)
         
-        //menuViewController.eventsIcon.transform = self.offStage(-middleRowOffset)
+        menuViewController.codeIcon.transform = self.offStage(-middleRowOffset)
         menuViewController.revCode.transform = self.offStage(-middleRowOffset)
         
-        //menuViewController.newsIcon.transform = self.offStage(-bottomRowOffset)
-        menuViewController.newsButton.transform = self.offStage(-bottomRowOffset)
+        menuViewController.fbIcon.transform = self.offStage(-bottomRowOffset)
+        menuViewController.fbButton.transform = self.offStage(-bottomRowOffset)
         
-        //menuViewController.rosterIcon.transform = self.offStage(topRowOffset)
+        menuViewController.pendingIcon.transform = self.offStage(topRowOffset)
         menuViewController.pendingPost.transform = self.offStage(topRowOffset)
         
-        //menuViewController.ordersIcon.transform = self.offStage(middleRowOffset)
+        menuViewController.revIcon.transform = self.offStage(middleRowOffset)
         menuViewController.findRev.transform = self.offStage(middleRowOffset)
         
-        //menuViewController.contactIcon.transform = self.offStage(bottomRowOffset)
-        menuViewController.contactButton.transform = self.offStage(bottomRowOffset)
+        menuViewController.twitIcon.transform = self.offStage(bottomRowOffset)
+        menuViewController.twitButton.transform = self.offStage(bottomRowOffset)
         
         
         
@@ -104,23 +104,23 @@ class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UI
         // prepare menu to fade in
         menuViewController.view.alpha = 1
         
-        //menuViewController.aboutIcon.transform = CGAffineTransformIdentity
+        menuViewController.postIcon.transform = CGAffineTransformIdentity
         menuViewController.makePost.transform = CGAffineTransformIdentity
         
-        //menuViewController.rosterIcon.transform = CGAffineTransformIdentity
+        menuViewController.pendingIcon.transform = CGAffineTransformIdentity
         menuViewController.pendingPost.transform = CGAffineTransformIdentity
         
-        //menuViewController.eventsIcon.transform = CGAffineTransformIdentity
+        menuViewController.codeIcon.transform = CGAffineTransformIdentity
         menuViewController.revCode.transform = CGAffineTransformIdentity
         
-        //menuViewController.ordersIcon.transform = CGAffineTransformIdentity
+        menuViewController.revIcon.transform = CGAffineTransformIdentity
         menuViewController.findRev.transform = CGAffineTransformIdentity
         
-        //menuViewController.newsIcon.transform = CGAffineTransformIdentity
-        menuViewController.newsButton.transform = CGAffineTransformIdentity
+        menuViewController.fbIcon.transform = CGAffineTransformIdentity
+        menuViewController.fbButton.transform = CGAffineTransformIdentity
         
-        //menuViewController.contactIcon.transform = CGAffineTransformIdentity
-        menuViewController.contactButton.transform = CGAffineTransformIdentity
+        menuViewController.twitIcon.transform = CGAffineTransformIdentity
+        menuViewController.twitButton.transform = CGAffineTransformIdentity
         
     }
     
