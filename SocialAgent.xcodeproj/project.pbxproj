@@ -20,8 +20,6 @@
 		79961A261C9A627A00C8A9D2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF67721C8947E2000D1ACC /* PostViewController.swift */; };
 		79E0AA4E1C9D116200B7625D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0AA4D1C9D116200B7625D /* MenuViewController.swift */; };
 		79E0AA501C9D141100B7625D /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */; };
-		79E2D5F21C9CADC20022A495 /* fb-art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79E2D5F11C9CADC20022A495 /* fb-art.jpg */; };
-		79E2D5F41C9CADCB0022A495 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E2D5F31C9CADCB0022A495 /* alltwitter-twitter-bird-logo-white-on-blue.png */; };
 		79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EAE8961C8FB65400C914A1 /* Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +60,6 @@
 		67CF67721C8947E2000D1ACC /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		79E0AA4D1C9D116200B7625D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
-		79E2D5F11C9CADC20022A495 /* fb-art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fb-art.jpg"; path = "../../../../Downloads/fb-art.jpg"; sourceTree = "<group>"; };
-		79E2D5F31C9CADCB0022A495 /* alltwitter-twitter-bird-logo-white-on-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "alltwitter-twitter-bird-logo-white-on-blue.png"; path = "../../../../Downloads/alltwitter-twitter-bird-logo-white-on-blue.png"; sourceTree = "<group>"; };
 		79EAE8961C8FB65400C914A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -129,8 +125,6 @@
 				044B530E1C8E94DE0092ECBD /* GradeViewController.swift */,
 				79E0AA4D1C9D116200B7625D /* MenuViewController.swift */,
 				79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */,
-				79E2D5F31C9CADCB0022A495 /* alltwitter-twitter-bird-logo-white-on-blue.png */,
-				79E2D5F11C9CADC20022A495 /* fb-art.jpg */,
 				79DA56C81C9CBB6A000ED436 /* Supporting Files */,
 			);
 			path = SocialAgent;
@@ -267,8 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				672BA5C41C7C1CD300E50A2A /* LaunchScreen.storyboard in Resources */,
-				79E2D5F41C9CADCB0022A495 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */,
-				79E2D5F21C9CADC20022A495 /* fb-art.jpg in Resources */,
 				672BA5C11C7C1CD300E50A2A /* Assets.xcassets in Resources */,
 				672BA5BC1C7C1CD300E50A2A /* Main.storyboard in Resources */,
 			);
