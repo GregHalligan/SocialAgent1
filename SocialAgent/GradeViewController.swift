@@ -40,7 +40,7 @@ class GradeViewController: UIViewController {
     /*
      //Posting to twitter
      */
-    @IBAction func twitterButtonPushed(sender: UIButton) {
+    @IBAction func twitterButton(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
             let twitterSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             twitterSheet.setInitialText("Share on Twitter")
@@ -55,7 +55,7 @@ class GradeViewController: UIViewController {
     /*
      //Posting to facebook
      */
-    @IBAction func facebookButtonPushed(sender: UIButton) {
+    @IBAction func facebookButton(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
             let facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             facebookSheet.setInitialText("Share on Facebook")

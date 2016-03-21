@@ -33,8 +33,69 @@ class PostViewController: UIViewController {
         return postText
     }
     
+    func textViewDidBeginEditing(postText: UITextView) {
+        if postText.textColor == UIColor.lightGrayColor() {
+            postText.text = nil
+            postText.textColor = UIColor.blackColor()
+        }
+    }
+    
+    func textViewDidEndEditing(postText: UITextView) {
+        if postText.text.isEmpty {
+            postText.text = "Placeholder"
+            postText.textColor = UIColor.lightGrayColor()
+        }
+    }
+    
+    func textView(postText: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        
+        // Combine the textView text and the replacement text to
+        // create the updated text string
+        let currentText:NSString = postText.text
+        let updatedText = currentText.stringByReplacingCharactersInRange(range, withString:text)
+        
+        // If updated text view will be empty, add the placeholder
+        // and set the cursor to the beginning of the text view
+        if updatedText.isEmpty {
+            
+            postText.text = "Placeholder"
+            postText.textColor = UIColor.lightGrayColor()
+            
+            postText.selectedTextRange = postText.textRangeFromPosition(postText.beginningOfDocument, toPosition: postText.beginningOfDocument)
+            
+            return false
+        }
+            
+            // Else if the text view's placeholder is showing and the
+            // length of the replacement string is greater than 0, clear
+            // the text view and set its color to black to prepare for
+            // the user's entry
+        else if postText.textColor == UIColor.lightGrayColor() && !text.isEmpty {
+            postText.text = nil
+            postText.textColor = UIColor.blackColor()
+        }
+        
+        return true
+    }
+    
+    func textViewDidChangeSelection(postText: UITextView) {
+        if self.view.window != nil {
+            if postText.textColor == UIColor.lightGrayColor() {
+                postText.selectedTextRange = postText.textRangeFromPosition(postText.beginningOfDocument, toPosition: postText.beginningOfDocument)
+            }
+        }
+    }
+    
+
     
     override func viewDidLoad() {
+        
+        postText.text = "Placeholder"
+        postText.textColor = UIColor.lightGrayColor()
+        
+        postText.becomeFirstResponder()
+        
+        postText.selectedTextRange = postText.textRangeFromPosition(postText.beginningOfDocument, toPosition: postText.beginningOfDocument)
         
         super.viewDidLoad()
         PostViewController.sharedPost = self

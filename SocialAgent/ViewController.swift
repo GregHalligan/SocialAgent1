@@ -14,9 +14,8 @@ class ViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
         
     }
-
-    @IBOutlet weak var facebookButton: UIImageView!
-    @IBOutlet weak var twitterButton: UIImageView!
+    @IBOutlet weak var facebookImage: UIImageView!
+    @IBOutlet weak var twitterImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

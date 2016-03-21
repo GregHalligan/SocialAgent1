@@ -390,7 +390,7 @@ var dictionary: [String] =
 
 class Grade {
     var postData = PostViewController()
-    let string = PostViewController.sharedPost
+    var string = PostViewController.sharedPost
     var newString : String!
     
     var count = dictionary.count
