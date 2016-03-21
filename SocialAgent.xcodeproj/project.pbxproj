@@ -13,7 +13,6 @@
 		672BA5BC1C7C1CD300E50A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672BA5BA1C7C1CD300E50A2A /* Main.storyboard */; };
 		672BA5BF1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5BD1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld */; };
 		672BA5C11C7C1CD300E50A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672BA5C01C7C1CD300E50A2A /* Assets.xcassets */; };
-		672BA5C41C7C1CD300E50A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672BA5C21C7C1CD300E50A2A /* LaunchScreen.storyboard */; };
 		672BA5CF1C7C1CD300E50A2A /* SocialAgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5CE1C7C1CD300E50A2A /* SocialAgentTests.swift */; };
 		672BA5DA1C7C1CD300E50A2A /* SocialAgentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5D91C7C1CD300E50A2A /* SocialAgentUITests.swift */; };
 		79961A251C9A627700C8A9D2 /* grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B52F21C8DFC280092ECBD /* grade.swift */; };
@@ -28,9 +27,7 @@
 		79B302201C9F43B700881D60 /* socialagentlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B3021F1C9F43B700881D60 /* socialagentlogo.png */; };
 		79B302221C9F52A800881D60 /* socialagentlogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302211C9F52A800881D60 /* socialagentlogo1.png */; };
 		79B302281C9F5ACB00881D60 /* sociallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302271C9F5ACB00881D60 /* sociallogo.png */; };
-		79B3022A1C9F61A600881D60 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B302291C9F61A600881D60 /* Launch Screen.storyboard */; };
-		79E0AA4E1C9D116200B7625D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0AA4D1C9D116200B7625D /* MenuViewController.swift */; };
-		79E0AA501C9D141100B7625D /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */; };
+		79B3022A1C9F61A600881D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B302291C9F61A600881D60 /* LaunchScreen.storyboard */; };
 		79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EAE8961C8FB65400C914A1 /* Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +57,6 @@
 		672BA5BB1C7C1CD300E50A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		672BA5BE1C7C1CD300E50A2A /* SocialAgent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialAgent.xcdatamodel; sourceTree = "<group>"; };
 		672BA5C01C7C1CD300E50A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		672BA5C31C7C1CD300E50A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		672BA5C51C7C1CD300E50A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		672BA5CA1C7C1CD300E50A2A /* SocialAgentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialAgentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		672BA5CE1C7C1CD300E50A2A /* SocialAgentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAgentTests.swift; sourceTree = "<group>"; };
@@ -79,9 +75,7 @@
 		79B3021F1C9F43B700881D60 /* socialagentlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = socialagentlogo.png; sourceTree = "<group>"; };
 		79B302211C9F52A800881D60 /* socialagentlogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = socialagentlogo1.png; sourceTree = "<group>"; };
 		79B302271C9F5ACB00881D60 /* sociallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sociallogo.png; sourceTree = "<group>"; };
-		79B302291C9F61A600881D60 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		79E0AA4D1C9D116200B7625D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
+		79B302291C9F61A600881D60 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79EAE8961C8FB65400C914A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -136,8 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				672BA5B61C7C1CD300E50A2A /* AppDelegate.swift */,
-				672BA5C21C7C1CD300E50A2A /* LaunchScreen.storyboard */,
-				79B302291C9F61A600881D60 /* Launch Screen.storyboard */,
+				79B302291C9F61A600881D60 /* LaunchScreen.storyboard */,
 				672BA5BA1C7C1CD300E50A2A /* Main.storyboard */,
 				672BA5C01C7C1CD300E50A2A /* Assets.xcassets */,
 				672BA5C51C7C1CD300E50A2A /* Info.plist */,
@@ -146,8 +139,6 @@
 				67CF67721C8947E2000D1ACC /* PostViewController.swift */,
 				044B52F21C8DFC280092ECBD /* grade.swift */,
 				044B530E1C8E94DE0092ECBD /* GradeViewController.swift */,
-				79E0AA4D1C9D116200B7625D /* MenuViewController.swift */,
-				79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */,
 				79DA56C81C9CBB6A000ED436 /* Supporting Files */,
 			);
 			path = SocialAgent;
@@ -293,13 +284,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				672BA5C41C7C1CD300E50A2A /* LaunchScreen.storyboard in Resources */,
 				79B302061C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */,
 				79B302101C9F288800881D60 /* twitter-logo.png in Resources */,
 				79B302221C9F52A800881D60 /* socialagentlogo1.png in Resources */,
 				79B3021C1C9F3B3600881D60 /* custom-reports.png in Resources */,
 				79B302141C9F301400881D60 /* magnifying-glass-clipart-9iR5nBpie.png in Resources */,
-				79B3022A1C9F61A600881D60 /* Launch Screen.storyboard in Resources */,
+				79B3022A1C9F61A600881D60 /* LaunchScreen.storyboard in Resources */,
 				79B3021E1C9F3BE000881D60 /* password-clipart-password.png in Resources */,
 				672BA5C11C7C1CD300E50A2A /* Assets.xcassets in Resources */,
 				79B3021A1C9F38EC00881D60 /* makepost1.png in Resources */,
@@ -332,10 +322,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79961A261C9A627A00C8A9D2 /* PostViewController.swift in Sources */,
-				79E0AA501C9D141100B7625D /* MenuTransitionManager.swift in Sources */,
 				672BA5B91C7C1CD300E50A2A /* ViewController.swift in Sources */,
 				672BA5B71C7C1CD300E50A2A /* AppDelegate.swift in Sources */,
-				79E0AA4E1C9D116200B7625D /* MenuViewController.swift in Sources */,
 				79961A251C9A627700C8A9D2 /* grade.swift in Sources */,
 				672BA5BF1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld in Sources */,
 				044B530F1C8E94DE0092ECBD /* GradeViewController.swift in Sources */,
@@ -380,14 +368,6 @@
 				672BA5BB1C7C1CD300E50A2A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		672BA5C21C7C1CD300E50A2A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				672BA5C31C7C1CD300E50A2A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
