@@ -12,6 +12,7 @@ class PostViewController: UIViewController {
     
     
     @IBOutlet weak var postText: UITextView!
+   
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         

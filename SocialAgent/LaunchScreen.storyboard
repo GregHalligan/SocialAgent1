@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sociallogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-k6-8gk">
-                                <rect key="frame" x="138" y="371" width="325" height="79"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="socialagentlogo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uh0-uO-kXi">
-                                <rect key="frame" x="131" y="78" width="327" height="277"/>
+                                <rect key="frame" x="172" y="75" width="250" height="250"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sociallogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-k6-8gk">
+                                <rect key="frame" x="134" y="347" width="332" height="63"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
