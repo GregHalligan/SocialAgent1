@@ -11,7 +11,7 @@ import UIKit
 class PostViewController: UIViewController {
     
     
-    @IBOutlet weak var postText: UITextView!
+    @IBOutlet weak var postText: UITextView!    
    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -90,7 +90,7 @@ class PostViewController: UIViewController {
 
     
     override func viewDidLoad() {
-        self.postText.scrollRangeToVisible(NSMakeRange(0, 0))
+        //self.postText.scrollRangeToVisible(NSMakeRange(0, 0))
         
         /*postText.text = "Placeholder"
         postText.textColor = UIColor.lightGrayColor()
