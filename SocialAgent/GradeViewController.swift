@@ -15,16 +15,43 @@ class GradeViewController: UIViewController {
     
     @IBOutlet weak var textFromPost: UITextView!
     @IBOutlet weak var total: UILabel!
+    @IBOutlet weak var submit: UIButton!
     
     var copyOfPost: String!
     
-    let score = Grade.sharedInstance
+    var score = Grade.sharedInstance
     var newTotal : Double!
     
     override func viewDidLoad() {
+        
+        submit.hidden = true
         textFromPost.text = copyOfPost
         newTotal = self.score.weightedTotal
         total.text = String(newTotal)
+        if newTotal <= 50.00 {
+            let alertView:UIAlertView = UIAlertView()
+            alertView.title = "Unacceptable"
+            alertView.message = "Please edit post before continuing"
+            alertView.delegate = self
+            alertView.addButtonWithTitle("OK")
+            alertView.show()
+            submit.hidden = false
+            //twitterButton.hidden = false
+            textFromPost.editable = true
+            func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+                
+                if segue.identifier == "reGrade" {
+                    
+                    let vc = segue.destinationViewController as! GradeViewController
+                    
+                    vc.copyOfPost = textFromPost.text
+                    
+                }
+            }
+            textFromPost.text = copyOfPost
+            newTotal = self.score.weightedTotal
+            total.text = String(newTotal)
+        }
         super.viewDidLoad()
         
         

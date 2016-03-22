@@ -15,6 +15,7 @@ class PostViewController: UIViewController {
    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
         
         if segue.identifier == "showGradeVC" {
             
@@ -33,7 +34,7 @@ class PostViewController: UIViewController {
         return postText
     }
     
-    func textViewDidBeginEditing(postText: UITextView) {
+    /*func textViewDidBeginEditing(postText: UITextView) {
         if postText.textColor == UIColor.lightGrayColor() {
             postText.text = nil
             postText.textColor = UIColor.blackColor()
@@ -84,18 +85,19 @@ class PostViewController: UIViewController {
                 postText.selectedTextRange = postText.textRangeFromPosition(postText.beginningOfDocument, toPosition: postText.beginningOfDocument)
             }
         }
-    }
+    }*/
     
 
     
     override func viewDidLoad() {
+        self.postText.scrollRangeToVisible(NSMakeRange(0, 0))
         
-        postText.text = "Placeholder"
+        /*postText.text = "Placeholder"
         postText.textColor = UIColor.lightGrayColor()
         
         postText.becomeFirstResponder()
         
-        postText.selectedTextRange = postText.textRangeFromPosition(postText.beginningOfDocument, toPosition: postText.beginningOfDocument)
+        postText.selectedTextRange = postText.textRangeFromPosition(postText.beginningOfDocument, toPosition: postText.beginningOfDocument)*/
         
         super.viewDidLoad()
         PostViewController.sharedPost = self
