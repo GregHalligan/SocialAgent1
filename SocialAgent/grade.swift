@@ -397,8 +397,8 @@ class Grade {
    
     
     var value = 0
-    var autoGrade = 0
-    var humanGrade = 0
+    var autoGrade = 0.00
+    var humanGrade = 0.00
     var weightedTotal = 0.00
     var weightedAutoGrade = 0.00
     var weightedHumGrade = 0.00
@@ -446,10 +446,12 @@ else if value == 0 {
     autoGrade = 100
 }
 
-//if (goodPost)
+        
+/**** TRANSFER TO REVIEWER FILE FOR TOTAL GRADE
+if (goodPost)
 humanGrade = 100
-//else
-//humanGrade = 0
+else
+humanGrade = 0
 
 //if human check selected
 weightedAutoGrade = 0.50 * Double(autoGrade)
@@ -465,24 +467,8 @@ weightedTotal = weightedAutoGrade + weightedHumGrade
 //weightedAutoGrade = 1.00 * Double(autoGrade)
 //weightedHumGrade = 0.00
 //weightedTotal = weightedAutoGrade + weightedHumGrade
+****/
 
-//print("Your post has a grade of \(weightedTotal)%")
-
-if weightedTotal >= 90 {
-    print("Make post")
-    //edit
-}
-else if weightedTotal < 90 && weightedTotal >= 70 {
-    print("yellow “Make post” button")
-    //edit
-}
-else if weightedTotal < 70 && weightedTotal > 50 {
-    print("red make post button")
-    //edit
-}
-else if weightedTotal <= 50 {
-    print("Please edit your post before continuing")
-}
     }
     
 

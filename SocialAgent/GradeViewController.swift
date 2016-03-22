@@ -31,12 +31,12 @@ class GradeViewController: UIViewController {
         cannotPost.hidden = true
         submit.hidden = true
         textFromPost.text = copyOfPost
-        newTotal = self.score.weightedTotal
+        newTotal = self.score.autoGrade
         total.text = String(newTotal)
         if newTotal <= 50.00 {
             let alertView:UIAlertView = UIAlertView()
             alertView.title = "Unacceptable"
-            alertView.message = "Please edit post before continuing"
+            alertView.message = "Please edit post or wait for review before continuing"
             alertView.delegate = self
             alertView.addButtonWithTitle("OK")
             alertView.show()
@@ -57,7 +57,7 @@ class GradeViewController: UIViewController {
                 }
             }
             textFromPost.text = copyOfPost
-            newTotal = self.score.weightedTotal
+            newTotal = self.score.autoGrade
             total.text = String(newTotal)
         }
         super.viewDidLoad()
