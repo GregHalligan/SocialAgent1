@@ -13,6 +13,10 @@ import Social
 class GradeViewController: UIViewController {
     
     
+    @IBOutlet weak var cannotPost: UILabel!
+    @IBOutlet weak var postLabel: UILabel!
+    @IBOutlet weak var twitterImage: UIImageView!
+    @IBOutlet weak var facebookImage: UIImageView!
     @IBOutlet weak var textFromPost: UITextView!
     @IBOutlet weak var total: UILabel!
     @IBOutlet weak var submit: UIButton!
@@ -24,6 +28,7 @@ class GradeViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        cannotPost.hidden = true
         submit.hidden = true
         textFromPost.text = copyOfPost
         newTotal = self.score.weightedTotal
@@ -35,8 +40,11 @@ class GradeViewController: UIViewController {
             alertView.delegate = self
             alertView.addButtonWithTitle("OK")
             alertView.show()
+            cannotPost.hidden = false
             submit.hidden = false
-            //twitterButton.hidden = false
+            facebookImage.hidden = true
+            twitterImage.hidden = true
+            postLabel.hidden = true
             textFromPost.editable = true
             func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
                 
