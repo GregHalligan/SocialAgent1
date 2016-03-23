@@ -396,9 +396,10 @@
                                 <rect key="frame" x="420" y="154" width="46" height="30"/>
                                 <state key="normal" title="Go!"/>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7C-0T-upF">
-                                <rect key="frame" x="135" y="248" width="331" height="224"/>
-                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r4F-cO-cd8">
+                                <rect key="frame" x="180" y="249" width="240" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -512,6 +513,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lie-Ms-SIo"/>
-        <segue reference="jMS-wZ-ycS"/>
+        <segue reference="2Zl-ag-kTT"/>
     </inferredMetricsTieBreakers>
 </document>

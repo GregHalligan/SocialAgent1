@@ -29,6 +29,7 @@
 		79B302221C9F52A800881D60 /* socialagentlogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302211C9F52A800881D60 /* socialagentlogo1.png */; };
 		79B302281C9F5ACB00881D60 /* sociallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302271C9F5ACB00881D60 /* sociallogo.png */; };
 		79B3022A1C9F61A600881D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B302291C9F61A600881D60 /* LaunchScreen.storyboard */; };
+		79B8D79B1CA326EE003D86B8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B8D79A1CA326EE003D86B8 /* FBSDKCoreKit.framework */; };
 		79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EAE8961C8FB65400C914A1 /* Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		79B302211C9F52A800881D60 /* socialagentlogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = socialagentlogo1.png; sourceTree = "<group>"; };
 		79B302271C9F5ACB00881D60 /* sociallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sociallogo.png; sourceTree = "<group>"; };
 		79B302291C9F61A600881D60 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79B8D79A1CA326EE003D86B8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		79EAE8961C8FB65400C914A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B8D79B1CA326EE003D86B8 /* FBSDKCoreKit.framework in Frameworks */,
 				79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +113,7 @@
 		672BA5AA1C7C1CD200E50A2A = {
 			isa = PBXGroup;
 			children = (
+				79B8D79A1CA326EE003D86B8 /* FBSDKCoreKit.framework */,
 				79EAE8961C8FB65400C914A1 /* Social.framework */,
 				672BA5B51C7C1CD300E50A2A /* SocialAgent */,
 				672BA5CD1C7C1CD300E50A2A /* SocialAgentTests */,
@@ -380,7 +384,7 @@
 		672BA5DC1C7C1CD300E50A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -425,7 +429,7 @@
 		672BA5DD1C7C1CD300E50A2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -466,9 +470,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = /Users/corey/Documents/FacebookSDK/;
 				INFOPLIST_FILE = SocialAgent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Capstone.SocialAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -481,9 +487,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = /Users/corey/Documents/FacebookSDK/;
 				INFOPLIST_FILE = SocialAgent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Capstone.SocialAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
