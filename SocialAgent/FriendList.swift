@@ -13,12 +13,8 @@ import FBSDKCoreKit
 import UIKit
 
 class FriendList: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        //TESTING
+    //TESTING
+    @IBAction func FacebookFriends(sender: AnyObject) {
         let request : FBSDKGraphRequest = FBSDKGraphRequest(graphPath:"/me/friends", parameters: nil)
         request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
             if error == nil {
@@ -28,40 +24,50 @@ class FriendList: UIViewController {
                 print("Error Getting Friends \(error)")
             }
         }
-        
-        /*
-         
-         var request = FBSDKGraphRequest(graphPath:"/me/taggable_friends", parameters: nil);
-         request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
-         if error == nil {
-         println("Friends are : \(result)")
-         } else {
-         println("Error Getting Friends \(error)");
-         }
-         }
-         */
-        
-        /*
-         var request = FBSDKGraphRequest(graphPath:"/me/friends", parameters: nil);
-         request.startWithCompletionHandler
-         {
-         (connection:FBRequestConnection!,   result:AnyObject!, error:NSError!) -> Void in
-         var resultdict = result as NSDictionary
-         println("Result Dict: \(resultdict)")
-         var data : NSArray = resultdict.objectForKey("data") as NSArray
-         
-         for i in 0 ..< data.count
-         {
-         let valueDict : NSDictionary = data[i] as NSDictionary
-         let id = valueDict.objectForKey("id") as String
-         println("the id value is \(id)")
-         }
-         
-         var friends = resultdict.objectForKey("data") as NSArray
-         println("Found \(friends.count) friends")
-         }
-         */
-        //TESTING
+    }
+    
+    
+    //TESTING
+    
+    
+    /*
+     
+     var request = FBSDKGraphRequest(graphPath:"/me/taggable_friends", parameters: nil);
+     request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
+     if error == nil {
+     println("Friends are : \(result)")
+     } else {
+     println("Error Getting Friends \(error)");
+     }
+     }
+     */
+    
+    /*
+     var request = FBSDKGraphRequest(graphPath:"/me/friends", parameters: nil);
+     request.startWithCompletionHandler
+     {
+     (connection:FBRequestConnection!,   result:AnyObject!, error:NSError!) -> Void in
+     var resultdict = result as NSDictionary
+     println("Result Dict: \(resultdict)")
+     var data : NSArray = resultdict.objectForKey("data") as NSArray
+     
+     for i in 0 ..< data.count
+     {
+     let valueDict : NSDictionary = data[i] as NSDictionary
+     let id = valueDict.objectForKey("id") as String
+     println("the id value is \(id)")
+     }
+     
+     var friends = resultdict.objectForKey("data") as NSArray
+     println("Found \(friends.count) friends")
+     }
+     */
+    //TESTING
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
         
     }

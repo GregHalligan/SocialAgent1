@@ -358,10 +358,10 @@
             </objects>
             <point key="canvasLocation" x="1602" y="402"/>
         </scene>
-        <!--View Controller-->
+        <!--Friend List-->
         <scene sceneID="1m5-q6-bn6">
             <objects>
-                <viewController id="Wu2-J2-rrq" sceneMemberID="viewController">
+                <viewController id="Wu2-J2-rrq" customClass="FriendList" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GMk-Tc-FF7"/>
                         <viewControllerLayoutGuide type="bottom" id="xPx-dB-c85"/>
@@ -373,6 +373,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTh-Br-GQL">
                                 <rect key="frame" x="192" y="88" width="86" height="45"/>
                                 <state key="normal" title="Facebook"/>
+                                <connections>
+                                    <action selector="FacebookFriends:" destination="Wu2-J2-rrq" eventType="touchUpInside" id="91Z-Bo-Ulw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdY-CE-0AK">
                                 <rect key="frame" x="322" y="88" width="86" height="45"/>
