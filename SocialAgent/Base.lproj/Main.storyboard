@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sociallogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="7He-et-XLx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sociallogo copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="7He-et-XLx">
                                 <rect key="frame" x="150" y="306" width="300" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="Cx3-kh-byg"/>
@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="height" constant="84" id="ucX-7i-Lej"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="socialagentlogo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lqt-2G-wfU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="socialagentlogo1 copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="lqt-2G-wfU">
                                 <rect key="frame" x="175" y="56" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lqt-2G-wfU" secondAttribute="height" multiplier="1:1" id="MlV-03-H8y"/>
@@ -510,8 +510,8 @@
         <image name="document-32.png" width="32" height="32"/>
         <image name="home-32.png" width="32" height="32"/>
         <image name="key-32.png" width="32" height="32"/>
-        <image name="socialagentlogo1.png" width="450" height="470"/>
-        <image name="sociallogo.png" width="418" height="60"/>
+        <image name="socialagentlogo1 copy.png" width="450" height="470"/>
+        <image name="sociallogo copy.png" width="418" height="60"/>
         <image name="twitter-logo.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
