@@ -18,16 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sociallogo copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-k6-8gk">
-                                <rect key="frame" x="20" y="348" width="560" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="gAc-Zw-4yC"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="socialagentlogo1 copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uh0-uO-kXi">
                                 <rect key="frame" x="14" y="87" width="560" height="266"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="X69-Zr-3ww"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sociallogo copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-k6-8gk">
+                                <rect key="frame" x="20" y="348" width="560" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="gAc-Zw-4yC"/>
                                 </constraints>
                             </imageView>
                         </subviews>

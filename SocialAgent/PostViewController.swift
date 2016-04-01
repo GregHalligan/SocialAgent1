@@ -90,6 +90,7 @@ class PostViewController: UIViewController {
 
     
     override func viewDidLoad() {
+        self.automaticallyAdjustsScrollViewInsets = false
         //self.postText.scrollRangeToVisible(NSMakeRange(0, 0))
         
         /*postText.text = "Placeholder"
