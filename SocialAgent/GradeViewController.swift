@@ -56,6 +56,7 @@ class GradeViewController: UIViewController {
                     
                 }
             }
+            
             textFromPost.text = copyOfPost
             newTotal = self.score.autoGrade
             total.text = String(newTotal)

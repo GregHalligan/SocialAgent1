@@ -8,10 +8,11 @@
 
 import UIKit
 
-class PostViewController: UIViewController {
+class PostViewController: UIViewController, UITextViewDelegate {
     
     
-    @IBOutlet weak var postText: UITextView!    
+    @IBOutlet weak var charsLeftLabel: UILabel!
+    @IBOutlet weak var postText: UITextView!
    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -29,82 +30,91 @@ class PostViewController: UIViewController {
     static var sharedPost: PostViewController?
     
     
+    
     //testing
     func getPost() -> UITextView {
         return postText
     }
-    
-    /*func textViewDidBeginEditing(postText: UITextView) {
-        if postText.textColor == UIColor.lightGrayColor() {
-            postText.text = nil
-            postText.textColor = UIColor.blackColor()
-        }
-    }
-    
-    func textViewDidEndEditing(postText: UITextView) {
-        if postText.text.isEmpty {
-            postText.text = "Placeholder"
-            postText.textColor = UIColor.lightGrayColor()
-        }
-    }
-    
-    func textView(postText: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
-        
-        // Combine the textView text and the replacement text to
-        // create the updated text string
-        let currentText:NSString = postText.text
-        let updatedText = currentText.stringByReplacingCharactersInRange(range, withString:text)
-        
-        // If updated text view will be empty, add the placeholder
-        // and set the cursor to the beginning of the text view
-        if updatedText.isEmpty {
-            
-            postText.text = "Placeholder"
-            postText.textColor = UIColor.lightGrayColor()
-            
-            postText.selectedTextRange = postText.textRangeFromPosition(postText.beginningOfDocument, toPosition: postText.beginningOfDocument)
-            
-            return false
-        }
-            
-            // Else if the text view's placeholder is showing and the
-            // length of the replacement string is greater than 0, clear
-            // the text view and set its color to black to prepare for
-            // the user's entry
-        else if postText.textColor == UIColor.lightGrayColor() && !text.isEmpty {
-            postText.text = nil
-            postText.textColor = UIColor.blackColor()
-        }
-        
-        return true
-    }
-    
-    func textViewDidChangeSelection(postText: UITextView) {
-        if self.view.window != nil {
-            if postText.textColor == UIColor.lightGrayColor() {
-                postText.selectedTextRange = postText.textRangeFromPosition(postText.beginningOfDocument, toPosition: postText.beginningOfDocument)
-            }
-        }
-    }*/
-    
 
     
     override func viewDidLoad() {
         self.automaticallyAdjustsScrollViewInsets = false
-        //self.postText.scrollRangeToVisible(NSMakeRange(0, 0))
-        
-        /*postText.text = "Placeholder"
-        postText.textColor = UIColor.lightGrayColor()
-        
-        postText.becomeFirstResponder()
-        
-        postText.selectedTextRange = postText.textRangeFromPosition(postText.beginningOfDocument, toPosition: postText.beginningOfDocument)*/
+        charsLeftLabel.text = "140"
+        postText.delegate = self
         
         super.viewDidLoad()
         PostViewController.sharedPost = self
 
         // Do any additional setup after loading the view.
     }
+    
+    func checkRemainingChars() {
+        
+        let allowedChars = 140
+        
+        let charsInTextView = -postText.text.characters.count
+        
+        let remainingChars = allowedChars + charsInTextView
+        
+        
+        if remainingChars <= allowedChars {
+            
+            charsLeftLabel.textColor = UIColor.blackColor()
+            
+        }
+        
+        if remainingChars <= 20 {
+            
+            charsLeftLabel.textColor = UIColor.orangeColor()
+            
+        }
+        
+        if remainingChars <= 10 {
+            
+            charsLeftLabel.textColor = UIColor.redColor()
+        }
+        
+        
+        charsLeftLabel.text = String(remainingChars)
+        
+        
+    }
+    
+    func textViewDidChange(textView: UITextView) {
+        
+        checkRemainingChars()
+    }
+    
+    func textViewDidBeginEditing(textView: UITextView) {
+        
+        
+    }
+    
+    @IBAction func sendButtonClicked(sender: AnyObject) {
+        
+        let allowedChars = 140
+        
+        let charsInTextView = -postText.text.characters.count
+        
+        let remainingChars = allowedChars + charsInTextView
+        
+        
+        if remainingChars < 0 {
+            
+            let alert = UIAlertController(title: "Warning: Twitter has a 140 character limit", message: nil, preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            
+        } /*else {
+            
+            let alert = UIAlertController(title: "Tweet has been posted!", message: nil, preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Yay", style: .Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }*/
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

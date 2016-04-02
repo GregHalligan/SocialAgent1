@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,31 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="socialagentlogo1 copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uh0-uO-kXi">
-                                <rect key="frame" x="14" y="87" width="560" height="266"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="socialagentlogo1 copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uh0-uO-kXi">
+                                <rect key="frame" x="175" y="56" width="250" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="X69-Zr-3ww"/>
+                                    <constraint firstAttribute="width" secondItem="Uh0-uO-kXi" secondAttribute="height" multiplier="1:1" id="6fH-q2-eeZ"/>
+                                    <constraint firstAttribute="height" constant="250" id="FvF-tD-XS1"/>
+                                    <constraint firstAttribute="width" constant="250" id="Lio-bO-qkQ"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sociallogo copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-k6-8gk">
-                                <rect key="frame" x="20" y="348" width="560" height="63"/>
+                                <rect key="frame" x="150" y="306" width="300" height="63"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="gAc-Zw-4yC"/>
+                                    <constraint firstAttribute="width" constant="300" id="6aU-Qw-dbY"/>
+                                    <constraint firstAttribute="height" constant="63" id="OWK-lE-pge"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jAK-k6-8gk" secondAttribute="bottom" constant="189" id="1i4-bQ-yuK"/>
-                            <constraint firstItem="Uh0-uO-kXi" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="6CD-ph-dXo"/>
-                            <constraint firstItem="jAK-k6-8gk" firstAttribute="top" secondItem="Uh0-uO-kXi" secondAttribute="bottom" constant="8" id="AK3-PM-56a"/>
-                            <constraint firstItem="jAK-k6-8gk" firstAttribute="trailing" secondItem="Uh0-uO-kXi" secondAttribute="trailing" id="KSa-FJ-d9Z"/>
-                            <constraint firstItem="Uh0-uO-kXi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LbH-Q1-7xz"/>
-                            <constraint firstItem="Uh0-uO-kXi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="dfb-9b-2L1"/>
-                            <constraint firstItem="jAK-k6-8gk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pq9-OG-YM9"/>
-                            <constraint firstItem="jAK-k6-8gk" firstAttribute="leading" secondItem="Uh0-uO-kXi" secondAttribute="leading" id="uQi-39-AL1"/>
-                            <constraint firstItem="jAK-k6-8gk" firstAttribute="top" secondItem="Uh0-uO-kXi" secondAttribute="bottom" constant="23" id="xi6-n6-Jr9"/>
-                            <constraint firstItem="Uh0-uO-kXi" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="55" id="z8M-Cl-F8C"/>
+                            <constraint firstItem="Uh0-uO-kXi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3Ix-sx-WcW"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jAK-k6-8gk" secondAttribute="bottom" constant="231" id="6gX-gP-Seg"/>
+                            <constraint firstItem="jAK-k6-8gk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="75U-TH-Fq1"/>
+                            <constraint firstItem="Uh0-uO-kXi" firstAttribute="centerX" secondItem="jAK-k6-8gk" secondAttribute="centerX" id="NYq-o7-GKL"/>
+                            <constraint firstItem="jAK-k6-8gk" firstAttribute="top" secondItem="Uh0-uO-kXi" secondAttribute="bottom" id="RCH-K1-LWm"/>
                         </constraints>
                     </view>
                 </viewController>
