@@ -26,10 +26,16 @@ class GradeViewController: UIViewController {
     var score = Grade.sharedInstance
     var newTotal : Double!
     
+    static var sharedPost: GradeViewController?
+    
+    @IBAction func unwindToGradeViewController(sender: UIStoryboardSegue) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         
         cannotPost.hidden = true
-        submit.hidden = true
+        submit.hidden = false
         textFromPost.text = copyOfPost
         newTotal = self.score.autoGrade
         total.text = String(newTotal)

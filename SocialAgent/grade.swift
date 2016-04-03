@@ -413,7 +413,6 @@ class Grade {
         }
         return Static.instance!
     }
-    
 
     init() {
     newString = self.string?.postText.text

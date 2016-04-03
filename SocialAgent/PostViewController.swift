@@ -13,7 +13,11 @@ class PostViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var charsLeftLabel: UILabel!
     @IBOutlet weak var postText: UITextView!
-   
+    @IBOutlet weak var gradeLabel: UILabel!
+    
+    @IBAction func unwindToPostViewController(sender: UIStoryboardSegue) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
@@ -28,6 +32,8 @@ class PostViewController: UIViewController, UITextViewDelegate {
     }
     
     static var sharedPost: PostViewController?
+    var newTotal : Double!
+    //var score = Grade.sharedInstance
     
     
     
@@ -41,6 +47,8 @@ class PostViewController: UIViewController, UITextViewDelegate {
         self.automaticallyAdjustsScrollViewInsets = false
         charsLeftLabel.text = "140"
         postText.delegate = self
+        //newTotal = self.score.autoGrade
+        //gradeLabel.text = String(newTotal)
         
         super.viewDidLoad()
         PostViewController.sharedPost = self
@@ -81,7 +89,9 @@ class PostViewController: UIViewController, UITextViewDelegate {
     }
     
     func textViewDidChange(textView: UITextView) {
-        
+        print(postText.text)
+        NSLog("Update text")
+        //print(newTotal)
         checkRemainingChars()
     }
     
