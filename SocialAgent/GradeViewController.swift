@@ -33,11 +33,13 @@ class GradeViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        newTotal = 0
         
         cannotPost.hidden = true
         submit.hidden = false
         textFromPost.text = copyOfPost
         newTotal = self.score.autoGrade
+        print(newTotal)
         total.text = String(newTotal)
         if newTotal <= 50.00 {
             let alertView:UIAlertView = UIAlertView()
