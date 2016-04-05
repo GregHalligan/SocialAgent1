@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="1" id="BYZ-38-t0r" customClass="ViewController" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -97,12 +97,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="GV6-Dy-XyJ"/>
             </objects>
-            <point key="canvasLocation" x="101" y="-687"/>
+            <point key="canvasLocation" x="101" y="-686"/>
         </scene>
         <!--Make Post-->
         <scene sceneID="eMl-84-txv">
             <objects>
-                <viewController title="Make Post" id="el7-ia-jek" customClass="PostViewController" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="2" title="Make Post" id="el7-ia-jek" customClass="PostViewController" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FK7-iF-pAo"/>
                         <viewControllerLayoutGuide type="bottom" id="h50-3X-Jak"/>
@@ -175,7 +175,7 @@
         <!--Navigation Controller-->
         <scene sceneID="gNq-Kb-r6C">
             <objects>
-                <navigationController id="j08-To-jfX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="3" id="j08-To-jfX" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HcW-oj-0Ts">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -191,7 +191,7 @@
         <!--Social Agent-->
         <scene sceneID="GAs-Au-0nD">
             <objects>
-                <viewController id="shk-Hy-aWV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="4" id="shk-Hy-aWV" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PSn-Bh-e8w"/>
                         <viewControllerLayoutGuide type="bottom" id="2yS-Jr-ap3"/>
@@ -246,7 +246,7 @@
         <!--View Controller-->
         <scene sceneID="gVR-Lb-IUN">
             <objects>
-                <viewController id="Rls-Up-NSW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="5" id="Rls-Up-NSW" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="alb-7q-zrC"/>
                         <viewControllerLayoutGuide type="bottom" id="r2H-gS-5CT"/>
@@ -291,7 +291,7 @@
         <!--Grade-->
         <scene sceneID="qW5-yt-ypi">
             <objects>
-                <viewController id="hHI-VK-QQ3" customClass="GradeViewController" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="6" id="hHI-VK-QQ3" customClass="GradeViewController" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z0C-AO-nzc"/>
                         <viewControllerLayoutGuide type="bottom" id="0Jy-vb-nr5"/>
@@ -310,7 +310,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-Qo-aT2">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-Qo-aT2">
                                 <rect key="frame" x="177" y="332" width="134" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="hdL-le-vfw"/>
@@ -330,7 +330,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7Z-wR-F5Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Post to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7Z-wR-F5Y">
                                 <rect key="frame" x="270" y="396" width="59" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="iF0-Av-1qt"/>
@@ -339,13 +339,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cannot post to social media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7a-ip-lKS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cannot post to social media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7a-ip-lKS">
                                 <rect key="frame" x="193" y="430" width="213" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="z7M-Wb-uKY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="twitter-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="z7M-Wb-uKY">
                                 <rect key="frame" x="305" y="430" width="88" height="84"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -356,7 +356,7 @@
                                     <outletCollection property="gestureRecognizers" destination="rQn-91-OQi" appends="YES" id="4rf-5q-fSj"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook-iOS-App-Logo-Png.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypk-vU-kxD">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Facebook-iOS-App-Logo-Png.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypk-vU-kxD">
                                 <rect key="frame" x="209" y="430" width="88" height="84"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -382,7 +382,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ6-I5-vVZ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ6-I5-vVZ">
                                 <rect key="frame" x="341" y="329" width="80" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Edit Post"/>
@@ -449,7 +449,7 @@
         <!--Friend List-->
         <scene sceneID="1m5-q6-bn6">
             <objects>
-                <viewController id="Wu2-J2-rrq" customClass="FriendList" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="7" id="Wu2-J2-rrq" customClass="FriendList" customModule="SocialAgent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GMk-Tc-FF7"/>
                         <viewControllerLayoutGuide type="bottom" id="xPx-dB-c85"/>
@@ -544,7 +544,7 @@
         <!--Review-->
         <scene sceneID="me8-fb-gmM">
             <objects>
-                <viewController id="xh2-zu-pxR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="8" id="xh2-zu-pxR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1ol-iq-7yb"/>
                         <viewControllerLayoutGuide type="bottom" id="9vu-7K-vtb"/>
@@ -575,7 +575,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="W9z-lw-bmd">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="85k-bC-NbS" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="9" automaticallyAdjustsScrollViewInsets="NO" id="85k-bC-NbS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="SSF-QX-wlZ">
                         <autoresizingMask key="autoresizingMask"/>
@@ -591,12 +591,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6i-Nq-DEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-673" y="63"/>
+            <point key="canvasLocation" x="-679" y="63"/>
         </scene>
         <!--Post-->
         <scene sceneID="maW-yK-MuJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CHK-co-ZZ2" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="10" automaticallyAdjustsScrollViewInsets="NO" id="CHK-co-ZZ2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post" image="document-32.png" id="qH5-6v-I1t"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TOb-zj-wxc">
@@ -624,7 +624,7 @@
         <image name="twitter-logo.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jMS-wZ-ycS"/>
-        <segue reference="lie-Ms-SIo"/>
+        <segue reference="2Zl-ag-kTT"/>
+        <segue reference="w6Y-ja-FMi"/>
     </inferredMetricsTieBreakers>
 </document>

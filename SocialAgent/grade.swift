@@ -403,7 +403,14 @@ class Grade {
     var weightedAutoGrade = 0.00
     var weightedHumGrade = 0.00
     
-    class var sharedInstance: Grade {
+    class var sharedInstance : Grade {
+        struct Static {
+            static let sharedInstance = Grade()
+        }
+        return Static.sharedInstance
+    }
+    
+    /*class var sharedInstance: Grade {
         struct Static {
             static var instance: Grade?
             static var token: dispatch_once_t = 0
@@ -412,7 +419,8 @@ class Grade {
             Static.instance = Grade()
         }
         return Static.instance!
-    }
+    }*/
+    
 
     init() {
     newString = self.string?.postText.text

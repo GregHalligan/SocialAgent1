@@ -31,6 +31,8 @@ class PostViewController: UIViewController, UITextViewDelegate {
         }
     }
     
+    let chars = "hello"
+    
     static var sharedPost: PostViewController?
     var newTotal : Double!
     //var score = Grade.sharedInstance
