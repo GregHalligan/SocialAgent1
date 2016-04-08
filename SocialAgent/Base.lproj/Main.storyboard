@@ -117,7 +117,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="twitter"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGw-JI-xHr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGw-JI-xHr">
                                 <rect key="frame" x="0.0" y="303" width="600" height="43"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -132,13 +132,13 @@
                                     <segue destination="hHI-VK-QQ3" kind="push" identifier="showGradeVC" id="jMS-wZ-ycS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da1-ci-pet">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da1-ci-pet">
                                 <rect key="frame" x="20" y="274" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrw-Tc-9vF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrw-Tc-9vF">
                                 <rect key="frame" x="538" y="274" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -148,17 +148,16 @@
                         <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lb1-Vd-gfE" firstAttribute="leading" secondItem="jGw-JI-xHr" secondAttribute="leading" id="4rw-ye-O1T"/>
+                            <constraint firstItem="Mrw-Tc-9vF" firstAttribute="baseline" secondItem="Da1-ci-pet" secondAttribute="baseline" id="EPm-op-7qk"/>
                             <constraint firstItem="h50-3X-Jak" firstAttribute="top" secondItem="jGw-JI-xHr" secondAttribute="bottom" constant="205" id="Fxf-lj-EY8"/>
-                            <constraint firstItem="Mrw-Tc-9vF" firstAttribute="trailing" secondItem="FJ3-AK-UvH" secondAttribute="trailingMargin" id="Hrq-CS-dD9"/>
                             <constraint firstItem="Lb1-Vd-gfE" firstAttribute="bottom" secondItem="jGw-JI-xHr" secondAttribute="bottom" id="IRK-Ek-VpK"/>
                             <constraint firstItem="Lb1-Vd-gfE" firstAttribute="top" secondItem="FK7-iF-pAo" secondAttribute="bottom" id="IdF-9l-HGa"/>
-                            <constraint firstItem="Mrw-Tc-9vF" firstAttribute="baseline" secondItem="Da1-ci-pet" secondAttribute="baseline" id="Q6z-bR-mb8"/>
                             <constraint firstItem="Da1-ci-pet" firstAttribute="leading" secondItem="FJ3-AK-UvH" secondAttribute="leadingMargin" id="j1D-WV-Vgi"/>
                             <constraint firstItem="Lb1-Vd-gfE" firstAttribute="trailing" secondItem="jGw-JI-xHr" secondAttribute="trailing" id="jbp-ha-fcZ"/>
-                            <constraint firstItem="Mrw-Tc-9vF" firstAttribute="top" secondItem="FK7-iF-pAo" secondAttribute="bottom" constant="254" id="mQ5-gr-epl"/>
                             <constraint firstAttribute="trailing" secondItem="jGw-JI-xHr" secondAttribute="trailing" id="nlS-qn-JzF"/>
                             <constraint firstItem="jGw-JI-xHr" firstAttribute="leading" secondItem="FJ3-AK-UvH" secondAttribute="leading" id="orX-fb-bxE"/>
                             <constraint firstItem="jGw-JI-xHr" firstAttribute="top" secondItem="Da1-ci-pet" secondAttribute="bottom" constant="8" symbolic="YES" id="pvF-gw-GSG"/>
+                            <constraint firstItem="Mrw-Tc-9vF" firstAttribute="trailing" secondItem="FJ3-AK-UvH" secondAttribute="trailingMargin" id="rGe-gl-KER"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Social Agent" id="5kq-rb-pJc"/>
@@ -387,7 +386,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Edit Post"/>
                                 <connections>
-                                    <segue destination="9hY-Fw-2x8" kind="unwind" unwindAction="unwindToPostViewController:" id="RTu-wL-cdq"/>
+                                    <action selector="dismissView:" destination="hHI-VK-QQ3" eventType="touchUpInside" id="Z20-F1-E7h"/>
+                                    <segue destination="9hY-Fw-2x8" kind="unwind" unwindAction="unwindGradeViewController:" id="zB2-fn-Wn2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -624,7 +624,7 @@
         <image name="twitter-logo.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2Zl-ag-kTT"/>
-        <segue reference="w6Y-ja-FMi"/>
+        <segue reference="lie-Ms-SIo"/>
+        <segue reference="jMS-wZ-ycS"/>
     </inferredMetricsTieBreakers>
 </document>
