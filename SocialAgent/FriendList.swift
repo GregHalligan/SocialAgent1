@@ -13,7 +13,7 @@ import FBSDKCoreKit
 import UIKit
 
 class FriendList: UIViewController {
-    //TESTING
+    //TESTING asdf
     @IBAction func FacebookFriends(sender: AnyObject) {
         let request : FBSDKGraphRequest = FBSDKGraphRequest(graphPath:"/me/friends", parameters: nil)
         request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
