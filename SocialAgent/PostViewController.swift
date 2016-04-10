@@ -14,33 +14,40 @@ class PostViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var charsLeftLabel: UILabel!
     @IBOutlet weak var postText: UITextView!
     @IBOutlet weak var gradeLabel: UILabel!
-    
-    @IBAction func unwindToPostViewController(sender: UIStoryboardSegue) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
         
         if segue.identifier == "showGradeVC" {
             
-            let vc = segue.destinationViewController as! GradeViewController
+            let gvc = segue.destinationViewController as! GradeViewController
             
-            vc.copyOfPost = postText.text
+            gvc.copyOfPost = postText.text
             
         }
     }
     
-    static var sharedPost: PostViewController?
-    var newTotal : Double!
+    @IBAction func unwindToPostViewController(segue: UIStoryboardSegue) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        //if let gvc = segue.sourceViewController as? GradeViewController {
+            //gvc.newTotal = 0
+            //print(gvc.newTotal)
+            
+        //}
+    }
+    
+    static var sharedPost: PostViewController!
+    //var newTotal : Double!
     //var score = Grade.sharedInstance
     
     
     
     //testing
-    func getPost() -> UITextView {
-        return postText
-    }
+    //func getPost() -> UITextView {
+      //  return postText
+   // }
 
     
     override func viewDidLoad() {

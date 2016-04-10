@@ -138,17 +138,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrw-Tc-9vF">
-                                <rect key="frame" x="538" y="274" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lb1-Vd-gfE" firstAttribute="leading" secondItem="jGw-JI-xHr" secondAttribute="leading" id="4rw-ye-O1T"/>
-                            <constraint firstItem="Mrw-Tc-9vF" firstAttribute="baseline" secondItem="Da1-ci-pet" secondAttribute="baseline" id="EPm-op-7qk"/>
                             <constraint firstItem="h50-3X-Jak" firstAttribute="top" secondItem="jGw-JI-xHr" secondAttribute="bottom" constant="205" id="Fxf-lj-EY8"/>
                             <constraint firstItem="Lb1-Vd-gfE" firstAttribute="bottom" secondItem="jGw-JI-xHr" secondAttribute="bottom" id="IRK-Ek-VpK"/>
                             <constraint firstItem="Lb1-Vd-gfE" firstAttribute="top" secondItem="FK7-iF-pAo" secondAttribute="bottom" id="IdF-9l-HGa"/>
@@ -157,13 +150,11 @@
                             <constraint firstAttribute="trailing" secondItem="jGw-JI-xHr" secondAttribute="trailing" id="nlS-qn-JzF"/>
                             <constraint firstItem="jGw-JI-xHr" firstAttribute="leading" secondItem="FJ3-AK-UvH" secondAttribute="leading" id="orX-fb-bxE"/>
                             <constraint firstItem="jGw-JI-xHr" firstAttribute="top" secondItem="Da1-ci-pet" secondAttribute="bottom" constant="8" symbolic="YES" id="pvF-gw-GSG"/>
-                            <constraint firstItem="Mrw-Tc-9vF" firstAttribute="trailing" secondItem="FJ3-AK-UvH" secondAttribute="trailingMargin" id="rGe-gl-KER"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Social Agent" id="5kq-rb-pJc"/>
                     <connections>
                         <outlet property="charsLeftLabel" destination="Da1-ci-pet" id="clh-NI-t52"/>
-                        <outlet property="gradeLabel" destination="Mrw-Tc-9vF" id="fff-o7-4TM"/>
                         <outlet property="postText" destination="Lb1-Vd-gfE" id="zRf-W1-Dd0"/>
                     </connections>
                 </viewController>
@@ -309,7 +300,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-Qo-aT2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-Qo-aT2">
                                 <rect key="frame" x="177" y="332" width="134" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="hdL-le-vfw"/>
@@ -329,7 +320,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Post to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7Z-wR-F5Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7Z-wR-F5Y">
                                 <rect key="frame" x="270" y="396" width="59" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="iF0-Av-1qt"/>
@@ -338,13 +329,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cannot post to social media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7a-ip-lKS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cannot post to social media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7a-ip-lKS">
                                 <rect key="frame" x="193" y="430" width="213" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="twitter-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="z7M-Wb-uKY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="z7M-Wb-uKY">
                                 <rect key="frame" x="305" y="430" width="88" height="84"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -355,7 +346,7 @@
                                     <outletCollection property="gestureRecognizers" destination="rQn-91-OQi" appends="YES" id="4rf-5q-fSj"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Facebook-iOS-App-Logo-Png.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypk-vU-kxD">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook-iOS-App-Logo-Png.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypk-vU-kxD">
                                 <rect key="frame" x="209" y="430" width="88" height="84"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -381,13 +372,12 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ6-I5-vVZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ6-I5-vVZ">
                                 <rect key="frame" x="341" y="329" width="80" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Edit Post"/>
                                 <connections>
-                                    <action selector="dismissView:" destination="hHI-VK-QQ3" eventType="touchUpInside" id="Z20-F1-E7h"/>
-                                    <segue destination="9hY-Fw-2x8" kind="unwind" unwindAction="unwindGradeViewController:" id="zB2-fn-Wn2"/>
+                                    <segue destination="9hY-Fw-2x8" kind="unwind" unwindAction="unwindToPostViewController:" id="3a7-1b-vas"/>
                                 </connections>
                             </button>
                         </subviews>

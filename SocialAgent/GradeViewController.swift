@@ -21,20 +21,15 @@ class GradeViewController: UIViewController {
     @IBOutlet weak var total: UILabel!
     @IBOutlet weak var submit: UIButton!
     
-    var copyOfPost: String!
+    var copyOfPost: String?
     
     var score = Grade.sharedInstance
     var newTotal : Double!
     
     static var sharedPost: GradeViewController?
     
-    @IBAction func unwindToGradeViewController(sender: UIStoryboardSegue) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
     
     override func viewDidLoad() {
-        newTotal = 0
-        
         cannotPost.hidden = true
         submit.hidden = false
         textFromPost.text = copyOfPost
@@ -54,18 +49,6 @@ class GradeViewController: UIViewController {
             twitterImage.hidden = true
             postLabel.hidden = true
             textFromPost.editable = true
-            func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-                
-                if segue.identifier == "reGrade" {
-                    
-                    let vc = segue.destinationViewController as! GradeViewController
-                    
-                    vc.copyOfPost = textFromPost.text
-                    
-                }
-            }
-            
-            textFromPost.text = copyOfPost
             newTotal = self.score.autoGrade
             total.text = String(newTotal)
         }

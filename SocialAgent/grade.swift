@@ -424,14 +424,17 @@ class Grade {
 
     init() {
     newString = self.string?.postText.text
+        
     value = dictionary.map({
     (newString?.lowercaseString.componentsSeparatedByString($0).count)! - 1
 }).reduce(0, combine:+)
+        
 
 for index in 0 ..< count {
     if newString.lowercaseString.rangeOfString(dictionary[index]) != nil {
         print("\(dictionary[index]) is a flagged word")
     }
+    
 }
 
 //flagged word count
