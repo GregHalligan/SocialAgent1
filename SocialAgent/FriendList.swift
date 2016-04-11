@@ -14,15 +14,6 @@ import UIKit
 import FBSDKShareKit
 
 
-extension FriendList: FBSDKAppInviteDialogDelegate{
-    func appInviteDialog(appInviteDialog: FBSDKAppInviteDialog!, didCompleteWithResults results: [NSObject : AnyObject]!) {
-        //TODO
-    }
-    func appInviteDialog(appInviteDialog: FBSDKAppInviteDialog!, didFailWithError error: NSError!) {
-        //TODO
-    }
-}
-
 class FriendList: UIViewController {
     //TESTING asdf more testing
     /*
@@ -38,8 +29,6 @@ class FriendList: UIViewController {
         }
      */
 
-    
-    
     
     //TESTING
     
@@ -82,16 +71,6 @@ class FriendList: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let content = FBSDKAppInviteContent()
-        content.appLinkURL = NSURL(string: "https://test/myapplink")
-        content.appInvitePreviewImageURL = NSURL(string: "https://test/myapplink")
-        // Old Way, now depreciated :
-        //FBSDKAppInviteDialog.showFromViewController(self, withContent: content, delegate: self)
-        //New way :
-        FBSDKAppInviteDialog.showFromViewController(self, withContent: content, delegate: self)
-        // Do any additional setup after loading the view.
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
