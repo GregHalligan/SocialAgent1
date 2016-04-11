@@ -11,9 +11,21 @@ import Accounts
 import Social
 import FBSDKCoreKit
 import UIKit
+import FBSDKShareKit
+
+
+extension FriendList: FBSDKAppInviteDialogDelegate{
+    func appInviteDialog(appInviteDialog: FBSDKAppInviteDialog!, didCompleteWithResults results: [NSObject : AnyObject]!) {
+        //TODO
+    }
+    func appInviteDialog(appInviteDialog: FBSDKAppInviteDialog!, didFailWithError error: NSError!) {
+        //TODO
+    }
+}
 
 class FriendList: UIViewController {
     //TESTING asdf more testing
+    /*
     @IBAction func FacebookFriends(sender: AnyObject) {
         let request : FBSDKGraphRequest = FBSDKGraphRequest(graphPath:"/me/friends", parameters: nil)
         request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
@@ -24,7 +36,9 @@ class FriendList: UIViewController {
                 print("Error Getting Friends \(error)")
             }
         }
-    }
+     */
+
+    
     
     
     //TESTING
@@ -68,6 +82,14 @@ class FriendList: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let content = FBSDKAppInviteContent()
+        content.appLinkURL = NSURL(string: "https://test/myapplink")
+        content.appInvitePreviewImageURL = NSURL(string: "https://test/myapplink")
+        // Old Way, now depreciated :
+        //FBSDKAppInviteDialog.showFromViewController(self, withContent: content, delegate: self)
+        //New way :
+        FBSDKAppInviteDialog.showFromViewController(self, withContent: content, delegate: self)
+        // Do any additional setup after loading the view.
         
         
     }
@@ -77,7 +99,6 @@ class FriendList: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
 //facebook login manager
 class LoginManager: NSObject {
     

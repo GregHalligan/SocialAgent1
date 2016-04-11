@@ -15,6 +15,11 @@
 		672BA5C11C7C1CD300E50A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672BA5C01C7C1CD300E50A2A /* Assets.xcassets */; };
 		672BA5CF1C7C1CD300E50A2A /* SocialAgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5CE1C7C1CD300E50A2A /* SocialAgentTests.swift */; };
 		672BA5DA1C7C1CD300E50A2A /* SocialAgentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5D91C7C1CD300E50A2A /* SocialAgentUITests.swift */; };
+		677AA0821CBC586500643173 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0801CBC586500643173 /* FBSDKCoreKit.framework */; };
+		677AA0831CBC586500643173 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0811CBC586500643173 /* FBSDKLoginKit.framework */; };
+		677AA0851CBC58F600643173 /* sociallogo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 677AA0841CBC58F600643173 /* sociallogo copy.png */; };
+		677AA0871CBC58FB00643173 /* socialagentlogo1 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 677AA0861CBC58FB00643173 /* socialagentlogo1 copy.png */; };
+		677AA0891CBC5FF400643173 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */; };
 		795DBEEF1CA069FE00F7EAFF /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEEE1CA069FE00F7EAFF /* home-32.png */; };
 		795DBEF11CA06A3400F7EAFF /* key-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF01CA06A3400F7EAFF /* key-32.png */; };
 		795DBEF31CA06CDA00F7EAFF /* document-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF21CA06CDA00F7EAFF /* document-32.png */; };
@@ -30,10 +35,6 @@
 		79B302281C9F5ACB00881D60 /* sociallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302271C9F5ACB00881D60 /* sociallogo.png */; };
 		79B3022A1C9F61A600881D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B302291C9F61A600881D60 /* LaunchScreen.storyboard */; };
 		79B5F65A1CA367380068B052 /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5F6591CA367380068B052 /* FriendList.swift */; };
-		79B5F65C1CA3796B0068B052 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B5F65B1CA3796B0068B052 /* FBSDKLoginKit.framework */; };
-		79B5F65E1CADED090068B052 /* sociallogo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B5F65D1CADED090068B052 /* sociallogo copy.png */; };
-		79B5F6601CADED100068B052 /* socialagentlogo1 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B5F65F1CADED100068B052 /* socialagentlogo1 copy.png */; };
-		79B8D79B1CA326EE003D86B8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B8D79A1CA326EE003D86B8 /* FBSDKCoreKit.framework */; };
 		79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EAE8961C8FB65400C914A1 /* Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,11 @@
 		672BA5D51C7C1CD300E50A2A /* SocialAgentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialAgentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		672BA5D91C7C1CD300E50A2A /* SocialAgentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAgentUITests.swift; sourceTree = "<group>"; };
 		672BA5DB1C7C1CD300E50A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		677AA0801CBC586500643173 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		677AA0811CBC586500643173 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		677AA0841CBC58F600643173 /* sociallogo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sociallogo copy.png"; path = "../../sociallogo copy.png"; sourceTree = "<group>"; };
+		677AA0861CBC58FB00643173 /* socialagentlogo1 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "socialagentlogo1 copy.png"; path = "../../socialagentlogo1 copy.png"; sourceTree = "<group>"; };
+		677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		67CF67721C8947E2000D1ACC /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		795DBEEE1CA069FE00F7EAFF /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-32.png"; sourceTree = "<group>"; };
 		795DBEF01CA06A3400F7EAFF /* key-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-32.png"; sourceTree = "<group>"; };
@@ -84,10 +90,6 @@
 		79B302271C9F5ACB00881D60 /* sociallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sociallogo.png; sourceTree = "<group>"; };
 		79B302291C9F61A600881D60 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79B5F6591CA367380068B052 /* FriendList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
-		79B5F65B1CA3796B0068B052 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		79B5F65D1CADED090068B052 /* sociallogo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sociallogo copy.png"; path = "../../../../Downloads/Capstone/sociallogo copy.png"; sourceTree = "<group>"; };
-		79B5F65F1CADED100068B052 /* socialagentlogo1 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "socialagentlogo1 copy.png"; path = "../../../../Downloads/Capstone/socialagentlogo1 copy.png"; sourceTree = "<group>"; };
-		79B8D79A1CA326EE003D86B8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		79EAE8961C8FB65400C914A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -96,8 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B5F65C1CA3796B0068B052 /* FBSDKLoginKit.framework in Frameworks */,
-				79B8D79B1CA326EE003D86B8 /* FBSDKCoreKit.framework in Frameworks */,
+				677AA0891CBC5FF400643173 /* FBSDKShareKit.framework in Frameworks */,
+				677AA0821CBC586500643173 /* FBSDKCoreKit.framework in Frameworks */,
+				677AA0831CBC586500643173 /* FBSDKLoginKit.framework in Frameworks */,
 				79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,8 +125,9 @@
 		672BA5AA1C7C1CD200E50A2A = {
 			isa = PBXGroup;
 			children = (
-				79B5F65B1CA3796B0068B052 /* FBSDKLoginKit.framework */,
-				79B8D79A1CA326EE003D86B8 /* FBSDKCoreKit.framework */,
+				677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */,
+				677AA0801CBC586500643173 /* FBSDKCoreKit.framework */,
+				677AA0811CBC586500643173 /* FBSDKLoginKit.framework */,
 				79EAE8961C8FB65400C914A1 /* Social.framework */,
 				672BA5B51C7C1CD300E50A2A /* SocialAgent */,
 				672BA5CD1C7C1CD300E50A2A /* SocialAgentTests */,
@@ -182,15 +186,15 @@
 		79DA56C81C9CBB6A000ED436 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				677AA0861CBC58FB00643173 /* socialagentlogo1 copy.png */,
+				677AA0841CBC58F600643173 /* sociallogo copy.png */,
 				79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */,
 				795DBEF41CA06D0A00F7EAFF /* ok-32.png */,
 				795DBEF81CA06D4000F7EAFF /* attention-32.png */,
-				79B5F65F1CADED100068B052 /* socialagentlogo1 copy.png */,
 				795DBEF61CA06D2300F7EAFF /* checked_2-32.png */,
 				795DBEF21CA06CDA00F7EAFF /* document-32.png */,
 				795DBEF01CA06A3400F7EAFF /* key-32.png */,
 				795DBEEE1CA069FE00F7EAFF /* home-32.png */,
-				79B5F65D1CADED090068B052 /* sociallogo copy.png */,
 				79B302211C9F52A800881D60 /* socialagentlogo1.png */,
 				79B302271C9F5ACB00881D60 /* sociallogo.png */,
 				79B3020D1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png */,
@@ -304,14 +308,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677AA0851CBC58F600643173 /* sociallogo copy.png in Resources */,
 				795DBEF11CA06A3400F7EAFF /* key-32.png in Resources */,
 				79B302061C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */,
-				79B5F65E1CADED090068B052 /* sociallogo copy.png in Resources */,
-				79B5F6601CADED100068B052 /* socialagentlogo1 copy.png in Resources */,
 				79B302101C9F288800881D60 /* twitter-logo.png in Resources */,
 				795DBEF31CA06CDA00F7EAFF /* document-32.png in Resources */,
 				795DBEF71CA06D2300F7EAFF /* checked_2-32.png in Resources */,
 				795DBEF51CA06D0A00F7EAFF /* ok-32.png in Resources */,
+				677AA0871CBC58FB00643173 /* socialagentlogo1 copy.png in Resources */,
 				79B302221C9F52A800881D60 /* socialagentlogo1.png in Resources */,
 				79B3022A1C9F61A600881D60 /* LaunchScreen.storyboard in Resources */,
 				795DBEEF1CA069FE00F7EAFF /* home-32.png in Resources */,
@@ -486,7 +490,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = $SRCROOT/FacebookSDK;
+				FRAMEWORK_SEARCH_PATHS = (
+					$SRCROOT/FacebookSDK,
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = SocialAgent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -503,7 +510,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = $SRCROOT/FacebookSDK;
+				FRAMEWORK_SEARCH_PATHS = (
+					$SRCROOT/FacebookSDK,
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = SocialAgent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
