@@ -23,17 +23,14 @@ extension facebookFriendsViewController: FBSDKAppInviteDialogDelegate{
 }
 
 class facebookFriendsViewController: UIViewController {
-
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
 
         // Do any additional setup after loading the view.
         let content = FBSDKAppInviteContent()
-        content.appLinkURL = NSURL(string: "itms://itunes.apple.com/us/app/facebook-messenger/id454638411?mt=8")
-        content.appInvitePreviewImageURL = NSURL(string: "itms://itunes.apple.com/us/app/facebook-messenger/id454638411?mt=8")
+        content.appLinkURL = NSURL(string: "https://test/myapplink")
+        content.appInvitePreviewImageURL = NSURL(string: "https://test/myapplink")
         // Old Way, now depreciated :
         //FBSDKAppInviteDialog.showFromViewController(self, withContent: content, delegate: self)
         //New way :
