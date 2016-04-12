@@ -17,8 +17,6 @@
 		672BA5DA1C7C1CD300E50A2A /* SocialAgentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5D91C7C1CD300E50A2A /* SocialAgentUITests.swift */; };
 		677AA0821CBC586500643173 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0801CBC586500643173 /* FBSDKCoreKit.framework */; };
 		677AA0831CBC586500643173 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0811CBC586500643173 /* FBSDKLoginKit.framework */; };
-		677AA0851CBC58F600643173 /* sociallogo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 677AA0841CBC58F600643173 /* sociallogo copy.png */; };
-		677AA0871CBC58FB00643173 /* socialagentlogo1 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 677AA0861CBC58FB00643173 /* socialagentlogo1 copy.png */; };
 		677AA0891CBC5FF400643173 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */; };
 		677AA08B1CBC704100643173 /* facebookFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */; };
 		795DBEEF1CA069FE00F7EAFF /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEEE1CA069FE00F7EAFF /* home-32.png */; };
@@ -27,6 +25,8 @@
 		795DBEF51CA06D0A00F7EAFF /* ok-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF41CA06D0A00F7EAFF /* ok-32.png */; };
 		795DBEF71CA06D2300F7EAFF /* checked_2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF61CA06D2300F7EAFF /* checked_2-32.png */; };
 		795DBEF91CA06D4000F7EAFF /* attention-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF81CA06D4000F7EAFF /* attention-32.png */; };
+		798028A71CBC7BD5009471FF /* socialagentlogo1 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */; };
+		798028A81CBC7BD5009471FF /* sociallogo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 798028A61CBC7BD5009471FF /* sociallogo copy.png */; };
 		79961A251C9A627700C8A9D2 /* grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B52F21C8DFC280092ECBD /* grade.swift */; };
 		79961A261C9A627A00C8A9D2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF67721C8947E2000D1ACC /* PostViewController.swift */; };
 		79B302061C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */; };
@@ -74,8 +74,6 @@
 		672BA5DB1C7C1CD300E50A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		677AA0801CBC586500643173 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		677AA0811CBC586500643173 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		677AA0841CBC58F600643173 /* sociallogo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sociallogo copy.png"; path = "../../sociallogo copy.png"; sourceTree = "<group>"; };
-		677AA0861CBC58FB00643173 /* socialagentlogo1 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "socialagentlogo1 copy.png"; path = "../../socialagentlogo1 copy.png"; sourceTree = "<group>"; };
 		677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookFriendsViewController.swift; sourceTree = "<group>"; };
 		67CF67721C8947E2000D1ACC /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +83,8 @@
 		795DBEF41CA06D0A00F7EAFF /* ok-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-32.png"; sourceTree = "<group>"; };
 		795DBEF61CA06D2300F7EAFF /* checked_2-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked_2-32.png"; sourceTree = "<group>"; };
 		795DBEF81CA06D4000F7EAFF /* attention-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attention-32.png"; sourceTree = "<group>"; };
+		798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialagentlogo1 copy.png"; sourceTree = SOURCE_ROOT; };
+		798028A61CBC7BD5009471FF /* sociallogo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sociallogo copy.png"; sourceTree = SOURCE_ROOT; };
 		79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alltwitter-twitter-bird-logo-white-on-blue.png"; sourceTree = "<group>"; };
 		79B3020D1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook-iOS-App-Logo-Png.png"; sourceTree = "<group>"; };
 		79B3020F1C9F288800881D60 /* twitter-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-logo.png"; sourceTree = "<group>"; };
@@ -189,8 +189,8 @@
 		79DA56C81C9CBB6A000ED436 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				677AA0861CBC58FB00643173 /* socialagentlogo1 copy.png */,
-				677AA0841CBC58F600643173 /* sociallogo copy.png */,
+				798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */,
+				798028A61CBC7BD5009471FF /* sociallogo copy.png */,
 				79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */,
 				795DBEF41CA06D0A00F7EAFF /* ok-32.png */,
 				795DBEF81CA06D4000F7EAFF /* attention-32.png */,
@@ -311,14 +311,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				677AA0851CBC58F600643173 /* sociallogo copy.png in Resources */,
 				795DBEF11CA06A3400F7EAFF /* key-32.png in Resources */,
 				79B302061C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */,
 				79B302101C9F288800881D60 /* twitter-logo.png in Resources */,
 				795DBEF31CA06CDA00F7EAFF /* document-32.png in Resources */,
 				795DBEF71CA06D2300F7EAFF /* checked_2-32.png in Resources */,
 				795DBEF51CA06D0A00F7EAFF /* ok-32.png in Resources */,
-				677AA0871CBC58FB00643173 /* socialagentlogo1 copy.png in Resources */,
+				798028A71CBC7BD5009471FF /* socialagentlogo1 copy.png in Resources */,
 				79B302221C9F52A800881D60 /* socialagentlogo1.png in Resources */,
 				79B3022A1C9F61A600881D60 /* LaunchScreen.storyboard in Resources */,
 				795DBEEF1CA069FE00F7EAFF /* home-32.png in Resources */,
@@ -327,6 +326,7 @@
 				79B3020E1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png in Resources */,
 				79B302281C9F5ACB00881D60 /* sociallogo.png in Resources */,
 				795DBEF91CA06D4000F7EAFF /* attention-32.png in Resources */,
+				798028A81CBC7BD5009471FF /* sociallogo copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
