@@ -27,6 +27,10 @@
 		795DBEF91CA06D4000F7EAFF /* attention-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF81CA06D4000F7EAFF /* attention-32.png */; };
 		798028A71CBC7BD5009471FF /* socialagentlogo1 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */; };
 		798028A81CBC7BD5009471FF /* sociallogo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 798028A61CBC7BD5009471FF /* sociallogo copy.png */; };
+		798028AF1CBD93D5009471FF /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798028AB1CBD93D5009471FF /* Fabric.framework */; };
+		798028B01CBD93D5009471FF /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798028AC1CBD93D5009471FF /* TwitterKit.framework */; };
+		798028B11CBD93D5009471FF /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 798028AD1CBD93D5009471FF /* TwitterKitResources.bundle */; };
+		798028B21CBD93D5009471FF /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798028AE1CBD93D5009471FF /* TwitterCore.framework */; };
 		79961A251C9A627700C8A9D2 /* grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B52F21C8DFC280092ECBD /* grade.swift */; };
 		79961A261C9A627A00C8A9D2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF67721C8947E2000D1ACC /* PostViewController.swift */; };
 		79B302061C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */; };
@@ -85,6 +89,11 @@
 		795DBEF81CA06D4000F7EAFF /* attention-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attention-32.png"; sourceTree = "<group>"; };
 		798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialagentlogo1 copy.png"; sourceTree = SOURCE_ROOT; };
 		798028A61CBC7BD5009471FF /* sociallogo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sociallogo copy.png"; sourceTree = SOURCE_ROOT; };
+		798028A91CBD7B38009471FF /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		798028AB1CBD93D5009471FF /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		798028AC1CBD93D5009471FF /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		798028AD1CBD93D5009471FF /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		798028AE1CBD93D5009471FF /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alltwitter-twitter-bird-logo-white-on-blue.png"; sourceTree = "<group>"; };
 		79B3020D1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook-iOS-App-Logo-Png.png"; sourceTree = "<group>"; };
 		79B3020F1C9F288800881D60 /* twitter-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-logo.png"; sourceTree = "<group>"; };
@@ -101,9 +110,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				677AA0891CBC5FF400643173 /* FBSDKShareKit.framework in Frameworks */,
+				798028AF1CBD93D5009471FF /* Fabric.framework in Frameworks */,
+				798028B21CBD93D5009471FF /* TwitterCore.framework in Frameworks */,
 				677AA0821CBC586500643173 /* FBSDKCoreKit.framework in Frameworks */,
 				677AA0831CBC586500643173 /* FBSDKLoginKit.framework in Frameworks */,
 				79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */,
+				798028B01CBD93D5009471FF /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +139,10 @@
 		672BA5AA1C7C1CD200E50A2A = {
 			isa = PBXGroup;
 			children = (
+				798028AB1CBD93D5009471FF /* Fabric.framework */,
+				798028AC1CBD93D5009471FF /* TwitterKit.framework */,
+				798028AD1CBD93D5009471FF /* TwitterKitResources.bundle */,
+				798028AE1CBD93D5009471FF /* TwitterCore.framework */,
 				677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */,
 				677AA0801CBC586500643173 /* FBSDKCoreKit.framework */,
 				677AA0811CBC586500643173 /* FBSDKLoginKit.framework */,
@@ -157,6 +173,7 @@
 				672BA5C01C7C1CD300E50A2A /* Assets.xcassets */,
 				672BA5C51C7C1CD300E50A2A /* Info.plist */,
 				672BA5BD1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld */,
+				798028A91CBD7B38009471FF /* Bridging-Header.h */,
 				672BA5B81C7C1CD300E50A2A /* ViewController.swift */,
 				044B52F21C8DFC280092ECBD /* grade.swift */,
 				677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */,
@@ -216,6 +233,7 @@
 				672BA5AF1C7C1CD200E50A2A /* Sources */,
 				672BA5B01C7C1CD200E50A2A /* Frameworks */,
 				672BA5B11C7C1CD200E50A2A /* Resources */,
+				798028AA1CBD938A009471FF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -315,6 +333,7 @@
 				79B302061C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */,
 				79B302101C9F288800881D60 /* twitter-logo.png in Resources */,
 				795DBEF31CA06CDA00F7EAFF /* document-32.png in Resources */,
+				798028B11CBD93D5009471FF /* TwitterKitResources.bundle in Resources */,
 				795DBEF71CA06D2300F7EAFF /* checked_2-32.png in Resources */,
 				795DBEF51CA06D0A00F7EAFF /* ok-32.png in Resources */,
 				798028A71CBC7BD5009471FF /* socialagentlogo1 copy.png in Resources */,
@@ -345,6 +364,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		798028AA1CBD938A009471FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run c364c9d820bbadd6cea2189e8c7a7af0631e3049 8dd4be1c3b9ccba6a4954934d07edaccedd6996d20ec00669e7b229e704b4984";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		672BA5AF1C7C1CD200E50A2A /* Sources */ = {
@@ -497,6 +532,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					$SRCROOT/FacebookSDK,
 					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SocialAgent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -505,6 +541,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Capstone.SocialAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialAgent/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -517,6 +554,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					$SRCROOT/FacebookSDK,
 					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SocialAgent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -525,6 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Capstone.SocialAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialAgent/Bridging-Header.h";
 			};
 			name = Release;
 		};

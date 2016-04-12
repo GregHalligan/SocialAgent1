@@ -13,9 +13,9 @@ import Social
 class GradeViewController: UIViewController {
     
     
+    @IBOutlet weak var twitterImage: UIImageView!
     @IBOutlet weak var cannotPost: UILabel!
     @IBOutlet weak var postLabel: UILabel!
-    @IBOutlet weak var twitterImage: UIImageView!
     @IBOutlet weak var facebookImage: UIImageView!
     @IBOutlet weak var textFromPost: UITextView!
     @IBOutlet weak var total: UILabel!
