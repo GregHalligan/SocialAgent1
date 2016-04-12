@@ -8,38 +8,130 @@
 
 import UIKit
 
-class PostViewController: UIViewController {
+class PostViewController: UIViewController, UITextViewDelegate {
     
     
+    @IBOutlet weak var charsLeftLabel: UILabel!
     @IBOutlet weak var postText: UITextView!
+    @IBOutlet weak var gradeLabel: UILabel!
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
         
         if segue.identifier == "showGradeVC" {
             
-            let vc = segue.destinationViewController as! GradeViewController
+            let gvc = segue.destinationViewController as! GradeViewController
             
-            vc.copyOfPost = postText.text
+            gvc.copyOfPost = postText.text
             
         }
     }
     
-    static var sharedPost: PostViewController?
+    @IBAction func unwindToPostViewController(segue: UIStoryboardSegue) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        //if let gvc = segue.sourceViewController as? GradeViewController {
+            //gvc.newTotal = 0
+            //print(gvc.newTotal)
+            
+        //}
+    }
+    
+    static var sharedPost: PostViewController!
+    //var newTotal : Double!
+    //var score = Grade.sharedInstance
+    
     
     
     //testing
-    func getPost() -> UITextView {
-        return postText
-    }
-    
+    //func getPost() -> UITextView {
+      //  return postText
+   // }
+
     
     override func viewDidLoad() {
+        self.automaticallyAdjustsScrollViewInsets = false
+        charsLeftLabel.text = "140"
+        postText.delegate = self
+        //newTotal = self.score.autoGrade
+        //gradeLabel.text = String(newTotal)
         
         super.viewDidLoad()
         PostViewController.sharedPost = self
 
         // Do any additional setup after loading the view.
     }
+    
+    func checkRemainingChars() {
+        
+        let allowedChars = 140
+        
+        let charsInTextView = -postText.text.characters.count
+        
+        let remainingChars = allowedChars + charsInTextView
+        
+        
+        if remainingChars <= allowedChars {
+            
+            charsLeftLabel.textColor = UIColor.blackColor()
+            
+        }
+        
+        if remainingChars <= 20 {
+            
+            charsLeftLabel.textColor = UIColor.orangeColor()
+            
+        }
+        
+        if remainingChars <= 10 {
+            
+            charsLeftLabel.textColor = UIColor.redColor()
+        }
+        
+        
+        charsLeftLabel.text = String(remainingChars)
+        
+        
+    }
+    
+    func textViewDidChange(textView: UITextView) {
+        print(postText.text)
+        NSLog("Update text")
+        //print(newTotal)
+        checkRemainingChars()
+    }
+    
+    func textViewDidBeginEditing(textView: UITextView) {
+        
+        
+    }
+    
+    @IBAction func sendButtonClicked(sender: AnyObject) {
+        
+        let allowedChars = 140
+        
+        let charsInTextView = -postText.text.characters.count
+        
+        let remainingChars = allowedChars + charsInTextView
+        
+        
+        if remainingChars < 0 {
+            
+            let alert = UIAlertController(title: "Warning: Twitter has a 140 character limit", message: nil, preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            
+        } /*else {
+            
+            let alert = UIAlertController(title: "Tweet has been posted!", message: nil, preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Yay", style: .Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }*/
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

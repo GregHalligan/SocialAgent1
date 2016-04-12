@@ -13,13 +13,29 @@
 		672BA5BC1C7C1CD300E50A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672BA5BA1C7C1CD300E50A2A /* Main.storyboard */; };
 		672BA5BF1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5BD1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld */; };
 		672BA5C11C7C1CD300E50A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672BA5C01C7C1CD300E50A2A /* Assets.xcassets */; };
-		672BA5C41C7C1CD300E50A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672BA5C21C7C1CD300E50A2A /* LaunchScreen.storyboard */; };
 		672BA5CF1C7C1CD300E50A2A /* SocialAgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5CE1C7C1CD300E50A2A /* SocialAgentTests.swift */; };
 		672BA5DA1C7C1CD300E50A2A /* SocialAgentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BA5D91C7C1CD300E50A2A /* SocialAgentUITests.swift */; };
+		677AA0821CBC586500643173 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0801CBC586500643173 /* FBSDKCoreKit.framework */; };
+		677AA0831CBC586500643173 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0811CBC586500643173 /* FBSDKLoginKit.framework */; };
+		677AA0891CBC5FF400643173 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */; };
+		677AA08B1CBC704100643173 /* facebookFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */; };
+		795DBEEF1CA069FE00F7EAFF /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEEE1CA069FE00F7EAFF /* home-32.png */; };
+		795DBEF11CA06A3400F7EAFF /* key-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF01CA06A3400F7EAFF /* key-32.png */; };
+		795DBEF31CA06CDA00F7EAFF /* document-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF21CA06CDA00F7EAFF /* document-32.png */; };
+		795DBEF51CA06D0A00F7EAFF /* ok-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF41CA06D0A00F7EAFF /* ok-32.png */; };
+		795DBEF71CA06D2300F7EAFF /* checked_2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF61CA06D2300F7EAFF /* checked_2-32.png */; };
+		795DBEF91CA06D4000F7EAFF /* attention-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF81CA06D4000F7EAFF /* attention-32.png */; };
+		798028A71CBC7BD5009471FF /* socialagentlogo1 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */; };
+		798028A81CBC7BD5009471FF /* sociallogo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 798028A61CBC7BD5009471FF /* sociallogo copy.png */; };
 		79961A251C9A627700C8A9D2 /* grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B52F21C8DFC280092ECBD /* grade.swift */; };
 		79961A261C9A627A00C8A9D2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF67721C8947E2000D1ACC /* PostViewController.swift */; };
-		79E0AA4E1C9D116200B7625D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0AA4D1C9D116200B7625D /* MenuViewController.swift */; };
-		79E0AA501C9D141100B7625D /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */; };
+		79B302061C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */; };
+		79B3020E1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B3020D1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png */; };
+		79B302101C9F288800881D60 /* twitter-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B3020F1C9F288800881D60 /* twitter-logo.png */; };
+		79B302221C9F52A800881D60 /* socialagentlogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302211C9F52A800881D60 /* socialagentlogo1.png */; };
+		79B302281C9F5ACB00881D60 /* sociallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B302271C9F5ACB00881D60 /* sociallogo.png */; };
+		79B3022A1C9F61A600881D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B302291C9F61A600881D60 /* LaunchScreen.storyboard */; };
+		79B5F65A1CA367380068B052 /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5F6591CA367380068B052 /* FriendList.swift */; };
 		79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EAE8961C8FB65400C914A1 /* Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +65,6 @@
 		672BA5BB1C7C1CD300E50A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		672BA5BE1C7C1CD300E50A2A /* SocialAgent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialAgent.xcdatamodel; sourceTree = "<group>"; };
 		672BA5C01C7C1CD300E50A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		672BA5C31C7C1CD300E50A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		672BA5C51C7C1CD300E50A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		672BA5CA1C7C1CD300E50A2A /* SocialAgentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialAgentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		672BA5CE1C7C1CD300E50A2A /* SocialAgentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAgentTests.swift; sourceTree = "<group>"; };
@@ -57,9 +72,26 @@
 		672BA5D51C7C1CD300E50A2A /* SocialAgentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialAgentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		672BA5D91C7C1CD300E50A2A /* SocialAgentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAgentUITests.swift; sourceTree = "<group>"; };
 		672BA5DB1C7C1CD300E50A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		677AA0801CBC586500643173 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		677AA0811CBC586500643173 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookFriendsViewController.swift; sourceTree = "<group>"; };
 		67CF67721C8947E2000D1ACC /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		79E0AA4D1C9D116200B7625D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
+		795DBEEE1CA069FE00F7EAFF /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-32.png"; sourceTree = "<group>"; };
+		795DBEF01CA06A3400F7EAFF /* key-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-32.png"; sourceTree = "<group>"; };
+		795DBEF21CA06CDA00F7EAFF /* document-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "document-32.png"; sourceTree = "<group>"; };
+		795DBEF41CA06D0A00F7EAFF /* ok-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-32.png"; sourceTree = "<group>"; };
+		795DBEF61CA06D2300F7EAFF /* checked_2-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked_2-32.png"; sourceTree = "<group>"; };
+		795DBEF81CA06D4000F7EAFF /* attention-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attention-32.png"; sourceTree = "<group>"; };
+		798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialagentlogo1 copy.png"; sourceTree = SOURCE_ROOT; };
+		798028A61CBC7BD5009471FF /* sociallogo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sociallogo copy.png"; sourceTree = SOURCE_ROOT; };
+		79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alltwitter-twitter-bird-logo-white-on-blue.png"; sourceTree = "<group>"; };
+		79B3020D1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook-iOS-App-Logo-Png.png"; sourceTree = "<group>"; };
+		79B3020F1C9F288800881D60 /* twitter-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-logo.png"; sourceTree = "<group>"; };
+		79B302211C9F52A800881D60 /* socialagentlogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = socialagentlogo1.png; sourceTree = "<group>"; };
+		79B302271C9F5ACB00881D60 /* sociallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sociallogo.png; sourceTree = "<group>"; };
+		79B302291C9F61A600881D60 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79B5F6591CA367380068B052 /* FriendList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
 		79EAE8961C8FB65400C914A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -68,6 +100,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677AA0891CBC5FF400643173 /* FBSDKShareKit.framework in Frameworks */,
+				677AA0821CBC586500643173 /* FBSDKCoreKit.framework in Frameworks */,
+				677AA0831CBC586500643173 /* FBSDKLoginKit.framework in Frameworks */,
 				79EAE8971C8FB65400C914A1 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +127,9 @@
 		672BA5AA1C7C1CD200E50A2A = {
 			isa = PBXGroup;
 			children = (
+				677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */,
+				677AA0801CBC586500643173 /* FBSDKCoreKit.framework */,
+				677AA0811CBC586500643173 /* FBSDKLoginKit.framework */,
 				79EAE8961C8FB65400C914A1 /* Social.framework */,
 				672BA5B51C7C1CD300E50A2A /* SocialAgent */,
 				672BA5CD1C7C1CD300E50A2A /* SocialAgentTests */,
@@ -114,17 +152,17 @@
 			isa = PBXGroup;
 			children = (
 				672BA5B61C7C1CD300E50A2A /* AppDelegate.swift */,
+				79B302291C9F61A600881D60 /* LaunchScreen.storyboard */,
 				672BA5BA1C7C1CD300E50A2A /* Main.storyboard */,
 				672BA5C01C7C1CD300E50A2A /* Assets.xcassets */,
-				672BA5C21C7C1CD300E50A2A /* LaunchScreen.storyboard */,
 				672BA5C51C7C1CD300E50A2A /* Info.plist */,
 				672BA5BD1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld */,
 				672BA5B81C7C1CD300E50A2A /* ViewController.swift */,
-				67CF67721C8947E2000D1ACC /* PostViewController.swift */,
 				044B52F21C8DFC280092ECBD /* grade.swift */,
+				677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */,
+				79B5F6591CA367380068B052 /* FriendList.swift */,
+				67CF67721C8947E2000D1ACC /* PostViewController.swift */,
 				044B530E1C8E94DE0092ECBD /* GradeViewController.swift */,
-				79E0AA4D1C9D116200B7625D /* MenuViewController.swift */,
-				79E0AA4F1C9D141100B7625D /* MenuTransitionManager.swift */,
 				79DA56C81C9CBB6A000ED436 /* Supporting Files */,
 			);
 			path = SocialAgent;
@@ -151,6 +189,19 @@
 		79DA56C81C9CBB6A000ED436 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */,
+				798028A61CBC7BD5009471FF /* sociallogo copy.png */,
+				79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */,
+				795DBEF41CA06D0A00F7EAFF /* ok-32.png */,
+				795DBEF81CA06D4000F7EAFF /* attention-32.png */,
+				795DBEF61CA06D2300F7EAFF /* checked_2-32.png */,
+				795DBEF21CA06CDA00F7EAFF /* document-32.png */,
+				795DBEF01CA06A3400F7EAFF /* key-32.png */,
+				795DBEEE1CA069FE00F7EAFF /* home-32.png */,
+				79B302211C9F52A800881D60 /* socialagentlogo1.png */,
+				79B302271C9F5ACB00881D60 /* sociallogo.png */,
+				79B3020D1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png */,
+				79B3020F1C9F288800881D60 /* twitter-logo.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -260,9 +311,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				672BA5C41C7C1CD300E50A2A /* LaunchScreen.storyboard in Resources */,
+				795DBEF11CA06A3400F7EAFF /* key-32.png in Resources */,
+				79B302061C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png in Resources */,
+				79B302101C9F288800881D60 /* twitter-logo.png in Resources */,
+				795DBEF31CA06CDA00F7EAFF /* document-32.png in Resources */,
+				795DBEF71CA06D2300F7EAFF /* checked_2-32.png in Resources */,
+				795DBEF51CA06D0A00F7EAFF /* ok-32.png in Resources */,
+				798028A71CBC7BD5009471FF /* socialagentlogo1 copy.png in Resources */,
+				79B302221C9F52A800881D60 /* socialagentlogo1.png in Resources */,
+				79B3022A1C9F61A600881D60 /* LaunchScreen.storyboard in Resources */,
+				795DBEEF1CA069FE00F7EAFF /* home-32.png in Resources */,
 				672BA5C11C7C1CD300E50A2A /* Assets.xcassets in Resources */,
 				672BA5BC1C7C1CD300E50A2A /* Main.storyboard in Resources */,
+				79B3020E1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png in Resources */,
+				79B302281C9F5ACB00881D60 /* sociallogo.png in Resources */,
+				795DBEF91CA06D4000F7EAFF /* attention-32.png in Resources */,
+				798028A81CBC7BD5009471FF /* sociallogo copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,10 +352,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				79961A261C9A627A00C8A9D2 /* PostViewController.swift in Sources */,
-				79E0AA501C9D141100B7625D /* MenuTransitionManager.swift in Sources */,
 				672BA5B91C7C1CD300E50A2A /* ViewController.swift in Sources */,
+				677AA08B1CBC704100643173 /* facebookFriendsViewController.swift in Sources */,
 				672BA5B71C7C1CD300E50A2A /* AppDelegate.swift in Sources */,
-				79E0AA4E1C9D116200B7625D /* MenuViewController.swift in Sources */,
+				79B5F65A1CA367380068B052 /* FriendList.swift in Sources */,
 				79961A251C9A627700C8A9D2 /* grade.swift in Sources */,
 				672BA5BF1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld in Sources */,
 				044B530F1C8E94DE0092ECBD /* GradeViewController.swift in Sources */,
@@ -338,21 +402,13 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		672BA5C21C7C1CD300E50A2A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				672BA5C31C7C1CD300E50A2A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		672BA5DC1C7C1CD300E50A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -397,7 +453,7 @@
 		672BA5DD1C7C1CD300E50A2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -438,9 +494,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					$SRCROOT/FacebookSDK,
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = SocialAgent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TequillaMockingbird.SocialAgent;
+				New_Setting = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Capstone.SocialAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -452,9 +514,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					$SRCROOT/FacebookSDK,
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = SocialAgent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TequillaMockingbird.SocialAgent;
+				New_Setting = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Capstone.SocialAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
