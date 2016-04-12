@@ -7,6 +7,7 @@
 //nope
 
 import UIKit
+import FBSDKLoginKit
 
 class ViewController: UIViewController {
     
@@ -25,6 +26,27 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func returnUserData()
+    {
+        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
+        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
+            
+            if ((error) != nil)
+            {
+                // Process error
+                print("Error: \(error)")
+            }
+            else
+            {
+                print("fetched user: \(result)")
+                let userName : NSString = result.valueForKey("name") as! NSString
+                print("User Name is: \(userName)")
+                let userEmail : NSString = result.valueForKey("email") as! NSString
+                print("User Email is: \(userEmail)")
+            }
+        })
     }
 }
 
