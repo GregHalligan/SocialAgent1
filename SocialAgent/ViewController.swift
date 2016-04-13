@@ -29,7 +29,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         {
             let loginView : FBSDKLoginButton = FBSDKLoginButton()
             self.view.addSubview(loginView)
-            loginView.center = self.view.center
+            loginView.center = CGPoint(x: 190, y: 470)// self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             //loginView.delegate = self
         }
@@ -48,7 +48,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
         
         // TODO: Change where the log in button is positioned in your view
-        logInButton.center = CGPoint(x: 190, y: 480) //self.view.center
+        logInButton.center = CGPoint(x: 190, y: 520) //self.view.center
         self.view.addSubview(logInButton)
 
     }
