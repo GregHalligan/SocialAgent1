@@ -93,6 +93,7 @@
 		798028AC1CBD93D5009471FF /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		798028AD1CBD93D5009471FF /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		798028AE1CBD93D5009471FF /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		798028B31CBDC73D009471FF /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		79B302051C9F255000881D60 /* alltwitter-twitter-bird-logo-white-on-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alltwitter-twitter-bird-logo-white-on-blue.png"; sourceTree = "<group>"; };
 		79B3020D1C9F283300881D60 /* Facebook-iOS-App-Logo-Png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook-iOS-App-Logo-Png.png"; sourceTree = "<group>"; };
 		79B3020F1C9F288800881D60 /* twitter-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-logo.png"; sourceTree = "<group>"; };
@@ -178,6 +179,7 @@
 				79B5F6591CA367380068B052 /* FriendList.swift */,
 				67CF67721C8947E2000D1ACC /* PostViewController.swift */,
 				044B530E1C8E94DE0092ECBD /* GradeViewController.swift */,
+				798028B31CBDC73D009471FF /* Bridging-Header.h */,
 				79DA56C81C9CBB6A000ED436 /* Supporting Files */,
 			);
 			path = SocialAgent;
@@ -539,6 +541,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Capstone.SocialAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SocialAgent/Bridging-Header.h";
 			};
 			name = Debug;
@@ -561,6 +564,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Capstone.SocialAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SocialAgent/Bridging-Header.h";
 			};
 			name = Release;
