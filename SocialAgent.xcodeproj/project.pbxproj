@@ -89,7 +89,6 @@
 		795DBEF81CA06D4000F7EAFF /* attention-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attention-32.png"; sourceTree = "<group>"; };
 		798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialagentlogo1 copy.png"; sourceTree = SOURCE_ROOT; };
 		798028A61CBC7BD5009471FF /* sociallogo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sociallogo copy.png"; sourceTree = SOURCE_ROOT; };
-		798028A91CBD7B38009471FF /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		798028AB1CBD93D5009471FF /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		798028AC1CBD93D5009471FF /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		798028AD1CBD93D5009471FF /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
@@ -173,7 +172,6 @@
 				672BA5C01C7C1CD300E50A2A /* Assets.xcassets */,
 				672BA5C51C7C1CD300E50A2A /* Info.plist */,
 				672BA5BD1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld */,
-				798028A91CBD7B38009471FF /* Bridging-Header.h */,
 				672BA5B81C7C1CD300E50A2A /* ViewController.swift */,
 				044B52F21C8DFC280092ECBD /* grade.swift */,
 				677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */,
