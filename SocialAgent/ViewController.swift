@@ -29,9 +29,10 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         {
             let loginView : FBSDKLoginButton = FBSDKLoginButton()
             self.view.addSubview(loginView)
+            //loginView.frame = CGRectMake(20, 20, 40, 40)
             loginView.center = CGPoint(x: 190, y: 470)// self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
-            //loginView.delegate = self
+            loginView.delegate = self
         }
         
         let logInButton = TWTRLogInButton { (session, error) in
