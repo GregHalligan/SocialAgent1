@@ -68,6 +68,7 @@ class GradeViewController: UIViewController {
      //Posting to twitter
      */
     @IBAction func twitterButton(sender: AnyObject) {
+        print("clicked")
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
             let twitterSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             twitterSheet.setInitialText(copyOfPost)
@@ -79,10 +80,12 @@ class GradeViewController: UIViewController {
         }
     }
     
+    
     /*
      //Posting to facebook
      */
     @IBAction func facebookButton(sender: AnyObject) {
+        print("clicked")
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
             let facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             facebookSheet.setInitialText(copyOfPost)
@@ -93,6 +96,10 @@ class GradeViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func anotherTest(sender: AnyObject) {
+        print("clicked")
     }
 
 
