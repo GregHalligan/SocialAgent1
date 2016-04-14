@@ -11,7 +11,7 @@ import Social
 import Foundation
 
 
-
+//list of words
 var dictionary: [String] =
     ["2g1c",
      "2 girls 1 cup",
@@ -187,6 +187,7 @@ var dictionary: [String] =
      "handjob",
      "hard core",
      "hardcore",
+     "heil hitler",
      "hentai",
      "homoerotic",
      "honkey",
@@ -311,7 +312,6 @@ var dictionary: [String] =
      "shemale",
      "shibari",
      "shit",
-     "shitty",
      "shota",
      "shrimping",
      "skeet",
