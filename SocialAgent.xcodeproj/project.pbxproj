@@ -174,11 +174,11 @@
 				672BA5C51C7C1CD300E50A2A /* Info.plist */,
 				672BA5BD1C7C1CD300E50A2A /* SocialAgent.xcdatamodeld */,
 				672BA5B81C7C1CD300E50A2A /* ViewController.swift */,
+				67CF67721C8947E2000D1ACC /* PostViewController.swift */,
+				044B530E1C8E94DE0092ECBD /* GradeViewController.swift */,
 				044B52F21C8DFC280092ECBD /* grade.swift */,
 				677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */,
 				79B5F6591CA367380068B052 /* FriendList.swift */,
-				67CF67721C8947E2000D1ACC /* PostViewController.swift */,
-				044B530E1C8E94DE0092ECBD /* GradeViewController.swift */,
 				798028B31CBDC73D009471FF /* Bridging-Header.h */,
 				79DA56C81C9CBB6A000ED436 /* Supporting Files */,
 			);
