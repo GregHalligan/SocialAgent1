@@ -19,8 +19,8 @@
 		677AA0831CBC586500643173 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0811CBC586500643173 /* FBSDKLoginKit.framework */; };
 		677AA0891CBC5FF400643173 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */; };
 		677AA08B1CBC704100643173 /* facebookFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */; };
-		79536B091CC08247004A8255 /* thumbsdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 79536B071CC08247004A8255 /* thumbsdown.png */; };
-		79536B0A1CC08247004A8255 /* thumbsup.png in Resources */ = {isa = PBXBuildFile; fileRef = 79536B081CC08247004A8255 /* thumbsup.png */; };
+		79536B0D1CC15C06004A8255 /* thumbsdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 79536B0B1CC15C06004A8255 /* thumbsdown.png */; };
+		79536B0E1CC15C06004A8255 /* thumbsup.png in Resources */ = {isa = PBXBuildFile; fileRef = 79536B0C1CC15C06004A8255 /* thumbsup.png */; };
 		795DBEEF1CA069FE00F7EAFF /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEEE1CA069FE00F7EAFF /* home-32.png */; };
 		795DBEF11CA06A3400F7EAFF /* key-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF01CA06A3400F7EAFF /* key-32.png */; };
 		795DBEF31CA06CDA00F7EAFF /* document-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 795DBEF21CA06CDA00F7EAFF /* document-32.png */; };
@@ -80,8 +80,8 @@
 		677AA0881CBC5FF400643173 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		677AA08A1CBC704100643173 /* facebookFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookFriendsViewController.swift; sourceTree = "<group>"; };
 		67CF67721C8947E2000D1ACC /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		79536B071CC08247004A8255 /* thumbsdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbsdown.png; path = ../../../thumbsdown.png; sourceTree = "<group>"; };
-		79536B081CC08247004A8255 /* thumbsup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbsup.png; path = ../../../thumbsup.png; sourceTree = "<group>"; };
+		79536B0B1CC15C06004A8255 /* thumbsdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsdown.png; sourceTree = "<group>"; };
+		79536B0C1CC15C06004A8255 /* thumbsup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsup.png; sourceTree = "<group>"; };
 		795DBEEE1CA069FE00F7EAFF /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-32.png"; sourceTree = "<group>"; };
 		795DBEF01CA06A3400F7EAFF /* key-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-32.png"; sourceTree = "<group>"; };
 		795DBEF21CA06CDA00F7EAFF /* document-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "document-32.png"; sourceTree = "<group>"; };
@@ -207,8 +207,8 @@
 				798028A51CBC7BD5009471FF /* socialagentlogo1 copy.png */,
 				798028A61CBC7BD5009471FF /* sociallogo copy.png */,
 				795DBEF41CA06D0A00F7EAFF /* ok-32.png */,
-				79536B071CC08247004A8255 /* thumbsdown.png */,
-				79536B081CC08247004A8255 /* thumbsup.png */,
+				79536B0B1CC15C06004A8255 /* thumbsdown.png */,
+				79536B0C1CC15C06004A8255 /* thumbsup.png */,
 				795DBEF81CA06D4000F7EAFF /* attention-32.png */,
 				795DBEF61CA06D2300F7EAFF /* checked_2-32.png */,
 				795DBEF21CA06CDA00F7EAFF /* document-32.png */,
@@ -330,10 +330,10 @@
 				79B302101C9F288800881D60 /* twitter-logo.png in Resources */,
 				795DBEF31CA06CDA00F7EAFF /* document-32.png in Resources */,
 				798028B11CBD93D5009471FF /* TwitterKitResources.bundle in Resources */,
-				79536B091CC08247004A8255 /* thumbsdown.png in Resources */,
+				79536B0D1CC15C06004A8255 /* thumbsdown.png in Resources */,
 				795DBEF71CA06D2300F7EAFF /* checked_2-32.png in Resources */,
 				795DBEF51CA06D0A00F7EAFF /* ok-32.png in Resources */,
-				79536B0A1CC08247004A8255 /* thumbsup.png in Resources */,
+				79536B0E1CC15C06004A8255 /* thumbsup.png in Resources */,
 				798028A71CBC7BD5009471FF /* socialagentlogo1 copy.png in Resources */,
 				79B3022A1C9F61A600881D60 /* LaunchScreen.storyboard in Resources */,
 				795DBEEF1CA069FE00F7EAFF /* home-32.png in Resources */,
